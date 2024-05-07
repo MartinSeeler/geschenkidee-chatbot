@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Providers } from "@/components/providers";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body>
+        <Providers>
+          <div className="flex flex-col min-h-screen">
+            <main className="flex flex-col flex-1">{children}</main>
+          </div>
+        </Providers>
+      </body>
     </html>
   );
 }
