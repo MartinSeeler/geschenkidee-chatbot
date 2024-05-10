@@ -99,15 +99,15 @@ export async function search_items(
     },
     "geschenkideeio-21",
     PartnerType.ASSOCIATES,
-    "AKIAJLELIWBWRIHCHG4Q",
-    "zJv+jJoi3kpTks38MYVoYnMgmoRnwFaKyQdznyRh",
+    process.env.AMZ_ACCESS_KEY as string,
+    process.env.AMZ_SECRET as string,
     Host.GERMANY,
     Region.GERMANY
   );
 
   const items = await request.send();
 
-  if (!items.Errors) {
+  if (items.Errors) {
     console.log(items.Errors);
     return items;
   }

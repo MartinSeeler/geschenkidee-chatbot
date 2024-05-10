@@ -15,7 +15,7 @@ export function AmazonSearchResults({
   results,
 }: AmazonSearchResultsProps) {
   return (
-    <div className="grid gap-2 rounded-2xl border border-zinc-200 bg-white p-2 sm:p-2 mb-6">
+    <div className="grid gap-2 rounded-2xl border border-zinc-200 bg-white p-2 sm:p-2 mb-8">
       <div className="grid gap-2 sm:flex sm:flex-row justify-between border-b p-2">
         <div>
           <div className="text-xs text-zinc-600">Vorschau für</div>
