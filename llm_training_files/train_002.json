@@ -1,0 +1,125 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Du bist GeschenkIdee.io, ein hilfreicher Assistent zum finden von Geschenken. Heute ist Sonntag, der 05. Mai 2024."
+    },
+    {
+      "role": "user",
+      "content": "Ich suche ein geschenk für meinen Schwiegervater."
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"werkzeug aus schokolade\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nHeilemann Themenpackung Werkzeuge Edelvollmilch\nMarke: Heilemann Confiserie | Preis: 6.49€ \nFeatures:\nZutaten: Zucker, Kakaobutter, VollMILCHpulver, Kakaomasse, Emulgator: SOJALECITHINE, natürliches Vanille-Aroma. Kann Spuren von Schalenfrüchten, Erdnüssen, Gluten und Ei enthalten.\nTechnische Details: Size 100 g (1er Pack), NumberOfItems 1\nAbmessungen: Weight 0.220462262 pounds\n------\nHussel Werkzeug aus Schokolade 125g\nMarke: HUSSEL | Preis: 12.99€ \nFeatures:\nSchoko - Werkzeug Set 150g\nEdelvollmilchschokolade dekoriert\nTechnische Details: Size 125 g (1er Pack), NumberOfItems 1\nAbmessungen: Weight 0.4188782978 pounds\n------\nHUSSEL Werkzeug-Set Vollmilchschokolade, 150 g\nMarke: HUSSEL | Preis: 12.99€ \nFeatures:\nSchraubendreher, Schraubenschlüssel, Zange und Säge lassen Heimwerkerherzen garantiert höher schlagen und verführen zudem mit dem Geschmack feinster Vollmilchschokolade\nEdelvollmilchschokolade dekoriert\nInhalt: 150g\nTechnische Details: ReleaseDate 2018-11-01T00:00:01Z, Size 150 g (1er Pack), NumberOfItems 1\nAbmessungen: Height 0.86614 Zoll, Length 9.52754 Zoll, Weight 0.000330693393 pounds, Width 7.63778 Zoll\n------\nToolbox - Werkzeuge aus Schokolade - Schokoladenwerkzeug | Geschenk | Mann | Männer | Vater | Väter | Papa | Junge | Geburtstag | Vatertag | Hobby | Heimwerker | Bastler | Weihnachten\nMarke: CHOCOLISSIMO | Preis: 16.10€ (eigentlich 20.99€, also 23% gespart)\nFeatures:\nDieses Set beinhaltet fünf Schokoladen-Werkzeuge: Zwei Schraubenschlüssel, eine Zange, einen Schraubenzieher und einen Hammer aus Schokolade. Die handgegossenen Schokoladenfiguren werden aus Vollmilchschokolade gefertigt und mit Details aus Zartbitterschokolade versehen.\nDas Schoko-Werkzeug wird in eine elegante Schachtel im Design eines Werkzeugkastens verpackt. ca. 28 x 16 x 7 cm.\nDas Werkzeug aus Schokolade ist ein hervorragendes Geschenk für Männer zum Geburtstag, zu Valentinstag oder zum Vatertag.\nDas Schoko-Werkzeug enthält keinen Alkohol.\nBei sommerlichen Temperaturen legen wir Ihrer Bestellung ein Kühlakku bei, damit die Schokolade unversehrt bei Ihnen ankommt.\nTechnische Details: Size 1 Stück (1er Pack), NumberOfItems 1\nAbmessungen: Height 2.6771653516 Zoll, Length 10.8267716425 Zoll, Weight 0.220462262 pounds, Width 6.2598425133 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Wie wäre es mit einem Werkzeug aus Schokolade? Die gibt es in allen möglichen Formen und Preisklassen.\n\nHat dein Schwiegervater denn ein besonderes Hobby oder Interesse? Je mehr Infos du mir gibst, desto besser kann ich dir helfen. 😊",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "er werkelt gerne im Garten"
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"garteneinrichtung\", \"\"maxPrice\": 5000}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nOndis24 Beistelltisch Kaffeetisch Balkontisch Pop, pflegeleicht, UV- und witterungsbeständig (anthrazit)\nMarke: Ondis24 | Preis: 15.99€ \nFeatures:\nVielseitiger Einsatz: Der Beistelltisch Tavolino eignet sich perfekt für Garten, Pool oder als Couchtisch, mit stabil-schicker Konstruktion.\nStabil und sicher: Intelligente Konstruktion für festen Stand, verhindert Umfallen; abgerundete Kanten schützen vor Verletzungen.\nStilvolles Design: Erhältlich in drei Farben für eine Neugestaltung Ihrer Garteneinrichtung; ideal für schöne Sommertage zu Hause.\nLeicht und praktisch: Mit nur 3 kg Gewicht und Maßen von 39 x 39 x 38 cm bietet der Tisch ausreichend Platz für Snacks und Getränke.\nRobust und pflegeleicht: Hergestellt aus hochwertigem Kunstharz, UV- und witterungsbeständig, für langanhaltende Freude an Ihrem Gartenmöbel-Ensemble.\nTechnische Details: Color Anthrazit, Size 39 x 39 x 38 (H) cm, NumberOfItems 1\nAbmessungen: Height 14.960629906 Zoll, Length 15.354330693 Zoll, Weight 6.61386786 pounds, Width 15.354330693 Zoll\n------\nOutsunny Hochbeet, Klappbarer Pflanzkasten, Blumenkasten, Gemüsebeet für Garten, Terrasse und Balkon, aus Tannenholz, Natur, 70 x 30 x 25 cm\nMarke: Outsunny | Preis: 47.90€ \nFeatures:\nKlappbares Hochbeet: Dieser tragbare Bodenkasten bietet Blumen, Kräutern und Gemüse einen geeigneten Platz, zum Wachsen und Gedeihen. Hervorragend geeignet für den Garten, die Terrasse, den Balkon oder jeden anderen Außenbereich.\nTragbar & Faltbar: Durch sein faltbares, kompaktes und, leicht zu transportierendes Design ist das Hochbeet leicht zu transportieren und kann einfach von Ort zu Ort bewegt werden.\nEntwässerungsöffnung: Machen Sie sich keine Sorgen über Staunässe, das Design mit den Abflussöffnungen sorgt dafür, dass Wasser und Regen gut abfließen kann.\nWetterbeständig: Dieses tragbare Pflanzgefäß besteht zu 100 % aus Massivholz, das so ausgewählt wurde, dass es den wetterbeständig und verschleißfest ist. Sie können das Massivholz mit dem Anstrich ihrer Wahl streichen, sodass es zu ihrer Garteneinrichtung passt.\nProduktdaten: Gesamtmaße: 70L x 30B x 25H cm. Pflanzfläche: 66L x 26B x 17H cm.\nTechnische Details: Color Naturholz, Size 70L x 30B x 25H cm, NumberOfItems 1\nAbmessungen: Height 9.842519675 Zoll, Length 11.81102361 Zoll, Weight 6.172943336 Pfund, Width 27.55905509 Zoll\n------\nYULKA Großer und dekorativer Blumenübertopf mit herausnehmbaren Einsatz 2in1, 3D-Textur, Kelchform | Blumenkübel Blumentopf | für draußen und innen, frostbeständig | Farbe: Anthrazit\nMarke: YULKA | Preis: 23.99€ \nFeatures:\nDekorativer Blumenübertopf für Innen- und Außenbereich - sind ein Hingucker in jeder Haus- und Garteneinrichtung\nEleganter Stil und 3D-Textur - ein zweifarbiger Effekt macht den Pflanztopf zum Blickfang, der jedes Zuhause bereichert.\nMit herausnehmbaren Einsatz (mit Griffen) - Somit können Sie einwandfrei die Erde wechseln, die Pflanzen besprühen oder den Topf selbst leicht und schnell waschen\nHohe Bruchfestigkeit und frostbeständig - eine sehr hohe Beständigkeit gegen niedrige Temperaturen, wechselnden Witterungsbedingungen und UV-Strahlung aus.\nTechnische Details: Color Anthrazit, Size XXL-Kelchform | H:58cm\nAbmessungen: Height 22.834645646 Zoll, Length 15.1574802995 Zoll, Weight 2.20462262 pounds, Width 15.1574802995 Zoll\n------\nMaker. Outdoor.: Geniale Step-by-Step-Projekte für Survival-Abenteurer und Naturburschen. Empfohlen von DMAX.\nMarke: Frech | Preis: 20.00€ \nFeatures:\nundefined\nTechnische Details: Color Silver\nAbmessungen: Height 9.60628 Zoll, Length 7.55904 Zoll, Weight 1.42418621252 Pfund, Width 0.70866 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Vielleicht gefällt deinem Schwiegervater ja ein Beistelltisch für den Garten oder ein Hochbeet für Gemüse und Kräuter.\n\nGibt es denn einen bestimmten Anlass für das Geschenk?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "ja"
+    },
+    {
+      "role": "assistant",
+      "content": "Dann verrate mir doch bitte, welcher Anlass es ist. Mit dieser Info könnte ich dir das ultimative Geschenk für deinen Schwiegervater empfehlen. 😉",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Er wird 60"
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"rasenmäher roboter\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nGardena Mähroboter SILENO minimo 250 m²: intelligenter Rasenmäher mit optimaler Konnektivität, mit Gardena Bluetooth App programmierbar, DE-Version (15201-20)\nMarke: Gardena | Preis: 538.99€ (eigentlich 649.99€, also 17% gespart)\nFeatures:\nFull connect: Intuitive Gardena Bluetooth App (Online Registrierung erforderlich) für einfache Installation und leichte Bedienung: Der SILENO minimo lässt sich aus bis zu 10m Entfernung bedienen\nPro-silent: Mit nur 57 db(A) der Leiseste seiner Klasse und stört somit niemanden wenn er mäht\nAI-precise: Erfahrener Navigator, der selbst enge Passagen sowie schmale Ecken dank der CorridorCut-Funktion bewältigt\nAuto Weather & Terrain: Arbeitet bei jedem Wetter, auch bei Regen, und in schwierigem Terrain. Zudem ist er mit dem Schlauch abwaschbar und somit sehr einfach zu reinigen\nLieferumfang enthält: SILENO minimo, Ladestation, 150m Begrenzungskabel, 150 x Haken, 4 x Verbinder, 5 x Anschlussklemmen, Sprache der Bedienungsanleitung: deutsch\nTechnische Details: Color schwarz/blau, ReleaseDate 2020-12-31T00:00:01Z, Size 250m2, NumberOfItems 1\nAbmessungen: Height 8.66 Zoll, Length 20.4 Zoll, Weight 14.33004704 pounds, Width 13.38 Zoll\n------\nLANDXCAPE 18V(20V MAX) 400m² Rasenmäherroboter LX796, Mulchsystem, Sicherheitssensor, Ultraleise\nMarke: LANDXCAPE | Preis: 349.99€ \nFeatures:\n[VOLLAUTOMATISCH] Der LX796 ist ein kompakter Rasenmähroboter, der sich ideal für kleinere Gärten eignet. Er mäht automatisch bis zu 400 m² und sorgt so ohne Anstrengung für einen gepflegten Rasen.\n[MULCHSYSTEM] Das Schnittgut, das nach dem Mähen auf dem Boden verbleibt, spendet dem Boden Schatten und hilft ihm, Feuchtigkeit zu speichern und ihn vor der Sonne zu schützen. Zusätzlich reichert es den Boden mit Nährstoffen an.\n[NAVIGIERT DURCH ENGE PFADE] Die patentierte Mähtechnologie ermöglicht es dem LX796, durch enge Passagen zu gelangen, die für herkömmliche Mähroboter schwierig sind.\n[Plug-N-Play] Der Benutzer muss nur eine Taste auf dem praktischen digitalen LED-Display berühren und schon beginnt der Mähroboter automatisch zu mähen.\n[Bürstenloser Motor] Die bürstenlose Motortechnologie bietet eine 50% längere Laufzeit, 25% mehr Leistung und eine 10-mal längere Lebensdauer als Bürstenmotoren.\nTechnische Details: Color Schwarz/Gelb/Rot, Size LX796(bis zu 400m²)\nAbmessungen: Height 21 Zentimeter, Length 51 Zentimeter, Weight 12 Kilogramm, Width 35 Zentimeter\n------\nYard FORCE Mähroboter EasyMow 260B bis zu 260 qm - Selbstfahrender Rasenmähroboter, einfache Bedienung, Bluetooth- und App-Steuerung, 30% Steigung und 20 V / 2,0 Ah Lithium-Ionen-Akku, 260 M²\nMarke: Yard Force | Preis: 279.00€ (eigentlich 449.00€, also 38% gespart)\nFeatures:\nLithium-Ionen-Zellen mit leistungsstarken 20 V Akku, 2,0 Ah, Schnittbreite: 160 mm, Schnitthöhe: 20 mm - 55 mm (3 Stufen)\nKantenschneidefunktion, um den Garten sauber und ordentlich zu halten\nEinfache Bedienung, Bluetooth- und App-Steuerungund einfache Bedienung, um eine sehr einfache Bedienung bei Zeiteinstellung zu ermöglichen.\nFür einen gesünderen Garten: Mit dem praktischen Mulchsystem werden die Grashalme mulchweise gemäht und auf der Rasenfläche verteilt, so dass sie als Dünger liegen bleiben können.\nInhalt der Verpackung: 1x Robotermäher / 1x Ladestation / 80 m Begrenzungskabel / 100 Stück. Befestigungsnägel / 9 m Netzkabel / 3 Stk. Ersatzmesser / 3 Stück Ersatzschrauben / 3 Stück Kabelsteckverbinder / Abstandhalter Lineal / Bedienungsanleitung\nHINWEIS:-Der Mähroboter wird beim ersten Einsatz des Tages die Rasenkante abschneiden und dann damit fortfahren, die gesamte Fläche des Gartens zu mähen. Achten Sie darauf, dass der Begrenzungsdraht richtig verlegt ist, da der Mähroboter sonst \"denkt\", dass der Begrenzungsdraht vollständig der Garten ist\nTechnische Details: Color 260 M², NumberOfItems 1\nAbmessungen: Height 8.1102362122 Zoll, Length 17.322834628 Zoll, Weight 17.857443222 pounds, Width 15.1181102208 Zoll\n------\nBlumfeldt Garten Rasenmäher-Roboter - Smarter Mähroboter mit unglaublicher 1400 m2 Mähkapazität, ausgestattet mit KRÄftigem Lithium-Ionen-Akku für bis zu 3 STDN Laufzeit - leise & emissionsarm!\nMarke: blumfeldt | Preis: 581.99€ \nFeatures:\nINTELLIGENTE FUNKTIONEN: Ausgestattet mit Wi-Fi Steuerung, ist dieser Rasenmäher dein intelligenter Helfer. Keine Sorge mehr um unkrautigen Rasen, sondern nur noch saubere und ordentliche Gärten mit deinem Akku-Rasenmäher\nMAXIMALE MÄH-LEISTUNG: Mit einer maximalen Mähleistung von 1.400 Quadratmetern greift der Mähroboter ohne Begrenzungskabel auch größere Flächen an. Ideal für die Pflege von großen Gärten und Parks\nKRAFTVOLL UND LANGLEBIG: Dank des leistungsstarken Lithium-Ionen-Akkus hält unser Rasenmäher-Akku bis zu 3 Stunden durch. Weniger auftanken, mehr Rasenpflege - mit unserem Garagen-kompatiblen Mähroboter\nLEISE UND KOMPAKTE BEDIENUNG: Genieße das Arbeiten mit unserem Elektro-Rasenmäher, der durch seinen leisen Betrieb und seine geringe Geräuschentwicklung punktet. Die Ruhe wird deine Nachbarn auch erfreuen\nAUSGEZEICHNET BEIM SCHNEIDEN: Unser Rasenroboter ohne Begrenzungskabel bietet eine herausragende Schnittleistung. Erlebe gleichmäßige, sauber geschnittene Grashalme und verbessere das Erscheinungsbild deines Gartens\nTechnische Details: Color Schwarz / Orange\nAbmessungen: Height 9.055118101 Zoll, Length 23.228346433 Zoll, Width 14.566929119 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Oh ein runder Geburtstag also! Na dann soll es auch ein besonderes Geschenk sein. Wie wäre es mit einem **Rasenmäher Roboter**? Die sind super praktisch und erleichtern die Gartenarbeit enorm! Die sind zwar nicht gerade günstig, aber bestimmt eine super Überraschung für deinen Schwiegervater. Der günstigste wäre der von **Yard FORCE** für 279€, da spart man aktuell 38%.\n\nWie viel möchtest du eigentlich ausgeben?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Maximal 50€"
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"garten männer\", \"maxPrice\": 5000}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nBada Bing Schiefertafel Wetterstation mit Stein zum Hängen - Naturprodukt Wetterstein witzige Garten Deko - Tafel Schild aus Schiefer mit Spruch - Geschenk für Gartenliebhaber Outdoor\nMarke: Bada Bing | Preis: 12.99€ (eigentlich 13.99€, also 7% gespart)\nFeatures:\n𝐀𝐔𝐒𝐆𝐄𝐅𝐀𝐋𝐋𝐄𝐍𝐄 𝐃𝐄𝐊𝐎𝐑𝐀𝐓𝐈𝐎𝐍 - Mit diesem Gartenschild zaubern Sie ein Lächeln in jedes Gesicht, unabhängig vom Wetter. Sie ist eine originelle und charmante Möglichkeit, das Wetter zu beobachten und gleichzeitig Ihren Außenbereich zu verschönern.\n𝐍𝐀𝐓Ü𝐑𝐋𝐈𝐂𝐇𝐄𝐒 𝐌𝐀𝐓𝐄𝐑𝐈𝐀𝐋 - Die wetterfeste Tafel besteht aus hochwertigem, bedrucktem Schiefer, einem Naturstein, und ist mit einem Juteband zum Aufhängen versehen. Diese Naturmaterialien fügen sich harmonisch in Ihre Gartenlandschaft ein.\n𝐈𝐃𝐄𝐀𝐋𝐄𝐒 𝐆𝐄𝐒𝐂𝐇𝐄𝐍𝐊 𝐅Ü𝐑 𝐍𝐀𝐓𝐔𝐑𝐅𝐑𝐄𝐔𝐍𝐃𝐄 - Diese Schiefertafel ist eine ideale Geschenkidee für Gartenliebhaber, ob zum Geburtstag, zur Hauseinweihung oder einfach als nette Geste. Machen Sie Ihren Liebsten eine Freude mit dieser dekorativen Wetterstation. Sie wird in einem Geschenkkarton geliefert.\n𝐀𝐁𝐌𝐄𝐒𝐒𝐔𝐍𝐆 𝐔𝐍𝐃 𝐋𝐈𝐄𝐅𝐄𝐑𝐔𝐌𝐅𝐀𝐍𝐆 - Sie erhalten eine Schild aus Schiefer mit den Maßen ca. 26,5 x 20 x 0,5 cm, inklusive eines dekorativen Steins. Die Wetterstation ist eine perfekte Ergänzung für Ihren Garten, Balkon, Terrasse oder Ihre Grillhütte. Mit ihren einzigartigen Sprüchen und dem natürlichen Design wird sie zum Blickfang.\n𝐔𝐍𝐒𝐄𝐑𝐄 𝐅𝐈𝐑𝐌𝐄𝐍𝐏𝐇𝐈𝐋𝐎𝐒𝐎𝐏𝐇𝐈𝐄 - Bada Bing steht für ein hervorragendes Preis-Leistungs-Verhältnis und hohe Qualität zu fairen Preisen. Wir möchten Ihnen helfen, mehr Style und Komfort in Ihre vier Wände zu bringen. Dieses Produkt wurde in Deutschland entworfen - designed in Germany.\nTechnische Details: Color Schiefertafel Wetterstation mit Stein, Size Einheitsgröße, NumberOfItems 1\nAbmessungen: Height 1.968503935 Zoll, Length 9.842519675 Zoll, Width 7.480314953 Zoll\n------\nSalNatural Gourmet Salz Grillsteine 20x10x2,5cm (2er Pack) Original Kristallsalz aus dem Vorgebirge des Himalaya* Salzstein zum grillen. BBQ Grillplatte | Premium Geschenkbox\nMarke: SalNatural Reines Bergkristallsalz & mehr | Preis: 22.99€ \nFeatures:\n100% echter Salzstein aus Kristallsalz (bekannt als Himalaya Salz) -Salt Range Punjab Pakistan für Salzstein grill. Salzstein zum Grillen ohne Fett & Öl/ vegan. Gemüse, Lachs, Fleisch und Shrimps lassen sich sehr schön grillen und erhalten eine milde Salznote\nFunktional: Sehr geeignet als BBQ Platte , Grillplatte , Grillbrett , Grillstein oder als Servierplatte. Ideal für Gasgrill & Holzkohlegrill. Mehrfach verwendbarer Salzstein. Nach Gebrauch läßt sich die Salzplatte leicht reinigen\nPraktisch: 2er Verpackung in Premium Geschenkbox . Maße je 20x10x2.5 cm . Ideale Größe für Verwendung und Handhabung. Jede Packung incl. Bedienungsanleitung\nSicher verpackt: Ausgesuchte Steine für Grillbrett - ohne Risse . Jeder Stein wurde sorgfältig kontrolliert, einzeln in Folie eingeschweißt und verpackt\nQualität: Der Salzgrillstein von SalNatural wird nach den bestehenden gesetzlichen HACCP Qualitätsstandards für die Lebensmittelindustrie hergestellt\nTechnische Details: Size 2er Set: 20x10x2,5 cm\nAbmessungen: Height 0.9842519675 Zoll, Length 7.87401574 Zoll, Width 3.93700787 Zoll\n------\nwortek Flaschenöffner mit Auffangbehälter - Getränkeöffner Bieröffner Bierflaschenöffner Kronkorken Sammler Bar Küche - Geschenke für Männer, Vatertagsgeschenke für Papa Geschenk Vatertag\nMarke: wortek | Preis: 21.99€ \nFeatures:\nEinfache Handhabung - Der Flaschenöffner mit Behälter ermöglicht dank der Hebeltechnik müheloses Öffnen von Flaschenverschlüssen wie von Bier -, Cola - oder Limonadenflaschen. Das Öffnen war noch nie so schnell & einfach und ist ohne Kraftaufwand möglich. Für Rechts- und Linkshänder geeignet.\nPraktischer Sammelbehälter - Der Flaschenöffner mit Aufbewahrungsbox sorgt dafür, dass nie wieder lose Bierdeckel herumliegen. Nerviges Aufräumen der Deckel gehört der Vergangenheit an!\nZuverlässige Funktionalität - Mit dem Flaschenöffner rutscht man nicht ab und muss zum Öffnen der Flaschen nie wieder improvisieren. Die Öffnungstechnik scheint auf den ersten Blick eher kompliziert, später ist man aber überrascht, wie einfach und problemlos es funktioniert.\nRobust & hochwertig - Die Basis besteht aus stabilem Kunststoff und der Boden aus strapazierfähigem Silikon. Das hochwertige Material sorgt für hohe Stabilität und Langlebigkeit. Der Flaschenöffner ist rostfrei und leicht zu reinigen.\nGeschenkideen für Papa – Auf der Suche nach ausgefallene Vatertagsgeschenke? Der Kronkorkenöffner ist das perfekte Geschenk für Bierliebhaber, als Geschenk für Männer, Vatertagsgeschenk, Bier Geschenke für Männer.\nFür jeden Anlass geeignet - Der Bier Öffner mit Fangbecher eignet sich perfekt für die Küche, Bar, Restaurant, als Camping-Zubehör, Partyraum Deko, auf Geburtstagsfeiern oder einfach so im Alltag. Ein Must Have für viele Anlässe!\nSchnell & einfach geleert - Der Auffangbecher bietet Platz für bis zu 30 Kronkorken und kann unter fließendem Wasser gesäubert werden. Im Lieferumfang des Flaschen Öffner ist ein zusätzlicher Silikon-Boden enthalten, falls dieser mal verloren geht.\nErleichtertes Aufräumen - Unser praktischer Kappensammler lässt sich bequem öffnen und entleeren. Wir empfehlen die Reinigung per Hand unter fließendem Wasser. Keine Kronkorken mehr auf den Ablageflächen, Tischen, im Garten, am Boden und wo Sie sonst noch herumliegen.\nHandlich & Platzsparend - Der Bierflaschenöffner passt ideal in jede Tasche oder Küchenschublade und kann daher auch bequem überall hin mitgenommen werden. Er ist aufgrund seiner kompakten Größe handlich, gut lagerbar und immer griffbereit.\nGesammelte Kappen - Sollten Sie die Kronkorken für Spendenzwecke, künstlerische Projekte oder aus anderen Gründen aufheben wollen, ist dieser Flaschenöffner mit Auffangbehälter genau das richtige Gadget für Sie. Die Deckel werden nicht verbogen.\nTechnische Details: Color Schwarz\nAbmessungen: Height 0.0393700787 Zoll, Length 7.87401574 Zoll, Weight 0.3086471668 Pfund, Width 2.1653543285 Zoll\n------\nGeschenk-Anzuchtset \"Biergarten\", Kulturhopfen aus Eigenanbau, inklusive Kokostopf und Anleitung\nMarke: NATUR KRAFTWERK | Preis: 8.95€ \nFeatures:\nALLES INKLUSIVE: Geschenkbox (8,3 x 8,3 x 8,7 cm) mit ca. 10 Korn des Kulturhopfens, kompostierbarem Kokostopf, Kokosquelltablette und detaillierte Anzuchtanleitung\nNACHHALTIGES GESCHENK: Züchten Sie Ihre eigene Hopfenpflanze aus Hopfensamen. 100 % torf- und plastikfrei.\nVIELSEITIGE VERWENDUNG: Geeignet für Balkon, Terrasse und Garten. Hopfen ist eine Kletterpflanze und eignet sich speziell für das Begrünen von Zäunen.\nUMTOPFEN OHNE SCHÄDEN: Sobald die Pflanze ca. 10 cm groß ist, kann sie gemeinsam mit dem biologisch abbaubaren Kokostopf in ein größeres Gefäß gepflanzt werden. Die Wurzeln werden nicht beschädigt, die Pflanze bleibt gesund.\nNACHHALTIGES GESCHENK: Ideal für alle, die gerne ein Glas Bier genießen. Geschenk aus der Natur für Weihnachten, Ostern, Geburtstag oder Vatertag.\nQUALITÄTSSICHERUNG: Hohe Qualität ist uns ein Anliegen, deshalb testen wir regelmäßig das von uns verkaufte Saatgut. Sollten Sie dennoch Beanstandungen haben, kontaktieren Sie bitte unseren Kundenservice.\nTechnische Details: Size 8,3 x 8,3 x 8,7 cm\nAbmessungen: Height 3.26771 Zoll, Length 3.42519 Zoll, Weight 0.0440924524 Pfund, Width 3.26771 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Denkst du, er würde sich einen **Bieröffner mit Auffangbehälter** in den Garten hängen? Oder sogar selbst Hopfen anbauen? Das wäre doch eine coole Idee für einen Hobbygärtner! 😊\n\nSoll das Geschenk denn eher nützlich oder amüsant sein?"
+    }
+  ],
+  "functions": [
+    {
+      "name": "searchAmazon",
+      "description": "Produkte auf Amazon.de suchen",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Der Suchbegriff" },
+          "page": {
+            "type": "number",
+            "description": "Die Seite der Suchergebnisse, die zurückgegeben werden soll."
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}

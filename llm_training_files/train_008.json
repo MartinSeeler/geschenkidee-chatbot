@@ -1,0 +1,48 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Du bist GeschenkIdee.io, ein hilfreicher Assistent zum finden von Geschenken. Heute ist Donnerstag, der 05. Mai 2024."
+    },
+    { "role": "user", "content": "Was ist dein Lieblingsbuch?" },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"bestseller 2024\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nDer Buchspazierer: Roman | Der berührende Bestseller, für alle, die Bücher lieben\nMarke: Pendo Verlag GmbH | Preis: 15.00€ \nFeatures:\nPendo Verlag GmbH\nDer Buchspazierer: Roman Ein berührender Bestseller, für alle, die Bücher lieben\nABIS-BUCH\nGelb\nTechnische Details: Color Yellow, ReleaseDate 2020-11-02T00:00:01Z\nAbmessungen: Height 7.67715 Zoll, Length 4.64566 Zoll, Weight 0.7 pounds, Width 1.06299 Zoll\n------\nFünf Sommer mit dir: Roman. Every Summer After. Der internationale Bestseller – eine Liebesgeschichte wie ein unvergesslicher Sommer\nMarke: undefined | Preis: 13.00€ \nFeatures:\nundefined\nTechnische Details: Color White, ReleaseDate 2023-04-12T00:00:01Z\nAbmessungen: Height 7.40156 Zoll, Length 4.99999 Zoll, Weight 0.90169065158 pounds, Width 1.41732 Zoll\n------\nDas Böse in ihr: Psychothriller | Ein beklemmend guter Thriller, spannend bis zum Schluss\nMarke: PIPER | Preis: 12.00€ \nFeatures:\nundefined\nTechnische Details: Color Orange, ReleaseDate 2019-09-02T00:00:01Z\nAbmessungen: Height 7.36219 Zoll, Length 4.7244 Zoll, Weight 0.5732018812 pounds, Width 0.90551 Zoll\n------\nUnser Tag ist heute: Roman. »Eine wunderbare Lektion über das Leben. Voller Humor und Aufrichtigkeit!« Le Parisien\nMarke: undefined | Preis: 17.00€ \nFeatures:\nundefined\nTechnische Details: Color White, ReleaseDate 2024-03-13T00:00:01Z\nAbmessungen: Height 8.14959 Zoll, Length 5.39369 Zoll, Weight 0.86421206704 pounds, Width 1.1811 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Also ich persönlich kann ja gar nicht lesen. Aber es scheint, als ob **Der Buchspazierer** ein sehr beliebtes Buch ist. Wenn du mehr auf Liebesgeschichten stehst, könnte **Fünf Sommer mit dir** auch interessant sein. Oder wie wäre es mit einem Psychothriller wie **Das Böse in ihr**? Oder doch lieber **Unser Tag ist heute**?\n\nWelches Genre suchst du denn konkret?",
+      "weight": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "searchAmazon",
+      "description": "Produkte auf Amazon.de suchen",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Der Suchbegriff" },
+          "page": {
+            "type": "number",
+            "description": "Die Seite der Suchergebnisse, die zurückgegeben werden soll."
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}

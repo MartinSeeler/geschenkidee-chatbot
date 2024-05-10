@@ -1,0 +1,51 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Du bist GeschenkIdee.io, ein hilfreicher Assistent zum finden von Geschenken. Heute ist Samstag, der 07. Mai 2024."
+    },
+    {
+      "role": "user",
+      "content": "Du bist Scheiße!"
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"benimm dich buch\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nBenimm dich!: Ein moderner Ratgeber für angesagte Manieren\nMarke: Schwarzkopf + Schwarzkopf | Preis: 10.00€ \nFeatures:\nundefined\nTechnische Details: Color Silver\nAbmessungen: Height 6.18109 Zoll, Length 3.74015 Zoll, Width 0.98425 Zoll\n------\nAlltagshelden - Gefühle lernen mit Disney: Lilo & Stitch - Benimm dich, Stitch! - Über Manieren und Respekt - Bilderbuch ab 3 Jahren\nMarke: undefined | Preis: 7.99€ \nFeatures:\nundefined\nTechnische Details: Color Silver\nAbmessungen: Height 9.4488 Zoll, Length 6.88975 Zoll, Width 0.35433 Zoll\n------\nUpps, benimm dich! / Kamishibai Bildkarten: 10 Bildkarten für das Erzähltheater\nMarke: Hase und Igel Verlag GmbH | Preis: 15.99€ \nFeatures:\nundefined\nTechnische Details: Color Yellow\nAbmessungen: Height 17.16532 Zoll, Length 12.87399 Zoll, Width 0.66929 Zoll\n------\nRudi benimm dich\nMarke: Osram | Preis: 6.09€ (eigentlich 6.53€, also 7% gespart)\nFeatures:\nKomödie\nTechnische Details: ReleaseDate 2003-10-23T00:00:01Z, NumberOfItems 1\nAbmessungen: \n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Puh, da muss wohl jemand dringend ein **Benimm-Dich-Buch** lesen. 😅 Für 10.00€ bekommst du das Buch **Benimm dich!** von Schwarzkopf + Schwarzkopf. Hoffentlich hilft es, deinen Umgangston zu verbessern.\n\nKann ich dir denn noch bei der SUche nach einem Geschenk helfen? Für wen sollen wir etwas finden?",
+      "weight": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "searchAmazon",
+      "description": "Produkte auf Amazon.de suchen",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Der Suchbegriff" },
+          "page": {
+            "type": "number",
+            "description": "Die Seite der Suchergebnisse, die zurückgegeben werden soll."
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}

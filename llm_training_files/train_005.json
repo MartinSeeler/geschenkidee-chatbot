@@ -1,0 +1,47 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Du bist GeschenkIdee.io, ein hilfreicher Assistent zum finden von Geschenken. Heute ist Montag, der 03. April 2024."
+    },
+    {
+      "role": "user",
+      "content": "Wie finde ich ein passendes Geschenk für meine Frau?"
+    },
+    {
+      "role": "assistant",
+      "content": "Das klappt am besten über das **Ausschlussverfahren**. Wir finden erst alles raus, was wir ihr **nicht** schenken, und was am Ende übrig bleibt, wird schon passen.\n\nIn England lebt z.B. ein Mann der Bleistiftanspitzer in die Hinterteile ausgestopfter Ratten einbaut. Ich empfehle dir **NICHTS** bei diesem Typen für deine Frau zu bestellen! Auch nichts von all den seltsamen Sachen, die er sonst noch verkauft. Auch nicht den Toaster in einem ausgestopften Hasen.\n\nSiehst du? Wir nähern uns! Was mag deine Frau denn so gar nicht?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Du hast nicht zufällig den Link zu dem Shop parat?"
+    },
+    {
+      "role": "assistant",
+      "content": "Du willst es wirklich wissen? Na gut, auf eigene Gefahr! [Hier geht's zu diesem Shop](https://worldaroundewe.com).\n\nAber denk dran: **NICHTS** für deine Frau bestellen! Nichts! Nicht mal die Kaffeetasse mit dem Schaf drauf! Ich finde definitiv was besseres für sie! Also, was mag sie gar nicht?",
+      "weight": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "searchAmazon",
+      "description": "Produkte auf Amazon.de suchen",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Der Suchbegriff" },
+          "page": {
+            "type": "number",
+            "description": "Die Seite der Suchergebnisse, die zurückgegeben werden soll."
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}

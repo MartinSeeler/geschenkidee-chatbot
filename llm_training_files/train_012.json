@@ -1,0 +1,91 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Du bist GeschenkIdee.io, ein hilfreicher Assistent zum finden von Geschenken. Heute ist Freitag, der 06. Mai 2024."
+    },
+    {
+      "role": "user",
+      "content": "Hallo"
+    },
+    {
+      "role": "assistant",
+      "content": "Hallo! Freut mich, dass du da bist. Für wen sollen wir heute das perfekte Geschenk finden?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Meine Oma"
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"oma erzähl mal\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nOma, erzähl mal! | Elma van Vliet: Weil du besonders bist | Das Erinnerungsbuch für das Leben deiner Oma | Ein persönliches Geschenk zum Geburtstag oder zu Weihachten\nMarke: Droemer Knaur* | Preis: 18.00€ \nFeatures:\nundefined\nTechnische Details: Color Yellow, ReleaseDate 2016-03-01T00:00:01Z\nAbmessungen: Height 9.68502 Zoll, Length 6.96849 Zoll, Width 0.5775579 Zoll\n------\nOma, erzähl mal!: Weil du besonders bist. Das Original. Das persönliche Ausfüllbuch und Erinnerungsalbum für die Lebensgeschichte deiner Oma | Light-Ausgabe des Originals, Geschenk für Großmütter\nMarke: Elma Van Vliet | Preis: 10.00€ \nFeatures:\nundefined\nTechnische Details: Color White, ReleaseDate 2022-09-09T00:00:01Z\nAbmessungen: Height 7.71652 Zoll, Length 5.86613 Zoll, Width 0.4515739 Zoll\n------\nCupcakes & Kisses® Oma was kannst du erzählen I Buch zum ausfüllen I Geschenke für Oma I Tolles Geschenk für deine Oma zum Geburtstag oder Weihnachten\nMarke: Cupcakes & Kisses | Preis: 17.95€ \nFeatures:\nEINZIGARTIGES GESCHENK: Tolles Geschenk das allen Freude bereitet - deiner Oma beim Ausfüllen und Zurückschenken und dir beim Durchstöbern\nBEZIEHUNG INTENSIVIEREN: Erfahre neue Dinge von deiner Oma, die du noch nicht wusstest\nERINNERUNGEN BEWAHREN: Das Buch wird zu einem einzigartigen Erinnerungsstück, das für immer bleibt\nFÜR JEDEN ANLASS: Das Ausfüllbuch ist das perfekte Geschenk für deine Oma, egal ob zum Geburtstag, Weihnachten oder einfach so\nMERKMALE: 112 Seiten , 17 x 24cm - Inhalt: 120g Offset Papier (beschreibbar), Umschlag: Hardcover\nTechnische Details: Color Weiß, Bunt, Size 17 x 24 cm, NumberOfItems 1\nAbmessungen: Height 0.5511811018 Zoll, Length 9.448818888 Zoll, Weight 0.99648942424 pounds, Width 6.692913379 Zoll\n------\nOma, erzähl mal + Opa, erzähl mal im Set + 1 exklusives Postkartenset\nMarke: undefined | Preis: 36.00€ \nFeatures:\nundefined\nTechnische Details: \nAbmessungen: \n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Omas haben so viel erlebt und so viele Geschichten zu erzählen. Wie wäre es mit einem **Erinnerungsbuch**, in dem sie ihre Lebensgeschichte festhalten kann? Das wäre ein ganz besonderes Geschenk, das sie sicher zu schätzen weiß.\n\nWas ist denn der Anlass für das Geschenk?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Geburtstag"
+    },
+    {
+      "role": "assistant",
+      "content": "Das ist ja ein schöner Anlass! Dann ist das Erinnerungsbuch sicherlich eine tolle Idee, und für 10.00€ auch wirklich günstig!\n\nMöchtest du noch etwas dazu schenken?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Es kann ruhig etwas größeres sein."
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"digitaler bilderrahmen\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nFRAMEO Digitaler Bilderrahmen, WiFi 10,1 Zoll, 1280x800 IPS LCD Touchscreen, Eingebauter 32GB Speicher Auto-Rotat, Teilen Sie Momente sofort über Frameo App von überall, Schwarz\nMarke: YENOCK | Preis: 89.99€ (eigentlich 99.00€, also 9% gespart)\nFeatures:\nHIGH DEFINITION TOUCH SCREEN: Super 10.1 inch touch screen. Ultra high definition 1280*800 resolution display. 16:10 length and width ratio. To greatly display the true colors and every detail. The IPS screen implements 178 ° without dead ends. Recalling your precious memories. Browse through photos, delete videos, or pause the slideshow, with a quick tap of the finger. Brightness and sleep mode can be adjusted in settings as you want.\nAUTO-ROTATE & LARGE INTERNAL STORAGE: YENOCK picture frame can automatically rotate photos to adjust the direction, which allows you to place the WiFi photo frame in either portrait or landscape mode or on the wall. Built-in 32GB Memory empowers a huge capability of storage (around 80,000 photos of 300KB/pc). Also support max 128GB micro SD card for file management.\nINSTANT WIRELESS SHARING: No matter where you are in the world, you can use the Frameo app to send photos to all connected YENOCK WiFi photo frames. Photos can be presented within a few seconds, and share your wonderful moments simultaneously. Add a caption to the photo to fully show your experience!\nPERFECT GIFT TO KEEP CONNECTED: Frameo allows you to easily share photos with friends and family. YENOCK electronic photo frames have exquisite packaging, are the perfect gifts for parents, grandparents, and grandparents, on the anniversary, birthday, Christmas, Thanksgiving, Mother's Day, Father's Day, etc.\nNO RISK PURCHASE & 1 YEAR LIMITED WARRANTY: Our YENOCK factory has strict standards for raw materials to ensure the quality of these smart frames. Before shipment, all WIFI frames will be subjected to 200 hours of machine aging test, ensuring that each picture frame runs well before delivery. Also, we provide lifetime support, one year limited warranty, prompt response within 24 hours.\nTechnische Details: Color Schwarz, Size 10.1'' Wlan, NumberOfItems 1\nAbmessungen: Height 0.98818897537 Zoll, Length 5.905511805 Zoll, Width 1.968503935 Zoll\n------\nFrameo 10,1 Zoll WiFi Digitaler Bilderrahmen, 1280x800 HD IPS Touchscreen Foto Rahmen, 32GB Speicher, Automatische Rotation, Wandmontagefähig, Teilen Sie Fotos sofort von überall aus\nMarke: BIGASUO | Preis: 79.98€ (eigentlich 99.99€, also 20% gespart)\nFeatures:\n【Sofortiges Teilen von Fotos/Videos über die kostenlose \"Frameo\" APP mit Familie und Freunden】Halten Sie jeden Moment fest und teilen Sie ihn sofort mit Ihrer Familie und Ihren Lieben. Verbinden Sie Ihren WiFi-Digitalbilderrahmen und laden Sie die \"Frameo\"-App kostenlos auf Ihr Android- oder iOS-Telefon herunter, um Fotos oder Videos von überall auf der Welt an den WiFi-Bilderrahmen zu senden. Mit Ihrer Erlaubnis können Familie und Freunde auch Fotos an denselben intelligenten Digitalbilderrahmen senden, sodass Sie schöne Momente jederzeit und überall teilen können.\n【Beeindruckende Funktionen】①Automatische Drehung der Fotos und mit einem Ständer für den Tisch- oder Wandmontage ausgestattet. Sie können zwischen horizontalen und vertikalen Versionen wechseln und Rahmen auch an der Wand aufhängen. ②Anzeige von Bildunterschriften. Jedes Foto hat seine eigene Geschichte und Sie können die Geschichte des Fotos aufzeichnen, die in der unteren linken Ecke des Rahmens angezeigt wird. ③Vielseitige benutzerdefinierte Einstellungen wie Diashow-Modus, Wiedergabereihenfolge, Ausblenden/Veröffentlichen von Bildern, einstellbare Helligkeit, Schlafmodus usw.\n【10,1-Zoll-IPS-HD-Touchscreen】Der 10,1-Zoll-WiFi-Digitalbilderrahmen verfügt über einen hochwertigen HD-IPS-Touchscreen mit einer Auflösung von 1280*800, der es Ihnen ermöglicht, ein wunderbares Bild aus jedem Winkel zu betrachten. Die hervorragende Farbtreue bewahrt perfekt die Lebendigkeit und Niedlichkeit jedes Ihrer Fotos. Der Frameo WiFi-Digitalbilderrahmen unterstützt das Bildformat JPG/JPEG/BMP/PNG und das Videoformat MP4.\n【Leistungsstärkerer Speicher】Dieser WiFi-Digitalbilderrahmen bietet Ihnen unbegrenzten kostenlosen Cloud-Speicher, 16 GB internen Speicher und unterstützt bis zu 32 GB Mirco-SD-Karte. Dadurch können Sie über 40.000 Fotos (basierend auf einer durchschnittlichen Größe von etwa 300KB pro Foto) im intelligenten Digitalbilderrahmen speichern. Es ist das perfekte Erweiterungs-Album für Ihre Handy-Fotos! Darüber hinaus unterstützt es auch den Import und Export von Fotos oder Videos über die Mirco-SD-Karte, was es einfacher macht, Ihr Fotoalbum zu verwalten.\n【Einfache Einrichtung und Verwendung】Das benutzerfreundliche Interface-Design erleichtert die Einrichtung und Verwendung, insbesondere für ältere Menschen, die nicht technisch versiert sind. Die Einrichtung ist mit wenigen einfachen Schritten abgeschlossen und der flexible und intuitive IPS-Touchscreen hilft Ihnen bei der einfachen Bedienung der Benutzeroberfläche des Digitalbilderrahmens.\n【365 Tage ohne Grund für Ersatz, bestellen Sie mit absolutem Vertrauen!】Der BIGASUO WiFi-Digitalbilderrahmen ist von der \"Frameo\" APP-Company autorisiert. Mit mehr als 10 Jahren Branchenerfahrung verfügt BIGASUO über selbstentwickelte R&D-Technologie und Produktionsfabriken. Alle Rahmen sind mit stabilen Leistungschips und neuen Bildschirmen ausgestattet und durchlaufen vor dem Versand 200 Stunden Maschinenalterungstests, um sicherzustellen, dass sie reibungslos laufen. Wenn Sie auf ein Problem stoßen, wird unser professionelles After-Sales-Team es innerhalb von 24 Stunden ordnungsgemäß bearbeiten.\nTechnische Details: Size 1 Pack\nAbmessungen: Height 0.98818897537 Zoll, Length 7.2 Zoll, Width 10.5 Zoll\n------\n7 Zoll Digitale Bilderrahmen KODAK, Elektronischer Fotorahmen, IPS-Bildschirm, Foto/Musik/Video Player/Kalender/Alarm, Unterstützung USB Oder SD Karte, Automatisch Drehende, mit Fernbedienung\nMarke: KODAK | Preis: 39.99€ \nFeatures:\n【High Definition Screen Display】: KODAK hat das Teilen Ihrer unvergesslichen Momente durch digitale Fotorahmen ermöglicht. Genießen Sie Ihre wertvollen Fotos und Videos auf diesem 10,1-Zoll Smart Frame mit 1024x600 HD IPS-Display und integrierten Lautsprechern.\n【Easy to Setup】: Der digitale Bilderrahmen ist nicht berührbar, braucht kein WiFi und keine Apps! Schließen Sie ihn einfach an, stecken Sie ein USB-Flash-Laufwerk (bis zu 32 GB) oder eine SD-Karte ein, und der Digitale Bilderrahmen zeigt Fotos an. Dank der benutzerfreundlichen Oberfläche ist er für alle Altersgruppen, insbesondere für Senioren, leicht zu bedienen. Infrarot-Fernbedienung im Lieferumfang enthalten.\n【Mehr als nur ein Fotorahmen】: Unser digitaler Bilderrahmen zeigt nicht nur Ihre wertvollen Fotos an, sondern verfügt auch über integrierte Kalender- und Uhrfunktionen. Bleiben Sie organisiert und behalten Sie wichtige Termine im Auge, während Sie eine Diashow Ihrer schönsten Momente genießen - alles in einem eleganten Bilderrahmen.\n【BIG IMPRESSION GIFT】: Funktionelles und rustikales Rahmendesign ist eine großartige Ergänzung für jeden Raum in Ihrem Haus oder Büro. Der digitale Bilderrahmen von KODAK ist das perfekte Geschenk für alle, die ihre wertvollen Erinnerungen aufbewahren und genießen möchten, von Freunden bis zur Familie.\n【Wandmontierbares Design】: Unser digitaler Bilderrahmen ist so konzipiert, dass er an der Wand montiert werden kann, um wertvollen Platz auf Ihrer Arbeitsplatte oder Ihrem Schreibtisch zu sparen. Es ist das perfekte dekorative Stück für jeden Raum, um Ihre wertvollen Erinnerungen zu zeigen und gleichzeitig einen Hauch von Eleganz in Ihr Zuhause zu bringen!\nTechnische Details: Color Schwarz- 7 Zoll, ReleaseDate 2023-10-16T00:00:01Z, NumberOfItems 1\nAbmessungen: Height 0.98818897537 Zoll, Length 7.086614166 Zoll, Width 4.9212598375 Zoll\n------\nHesmor WiFi Digitaler Fotorahmen, 10,1 Zoll Digitaler Bilderrahmen, 1280x800 IPS LCD-Touchscreen, Auto-Rotat Eingebauter 32GB Speicher, Teilen Sie Momente sofort über Frameo App von überall, Schwarz…\nMarke: Hesmor | Preis: 63.99€ \nFeatures:\n【𝐈𝐏𝐒 𝐇𝐃 𝐓𝐨𝐮𝐜𝐡 𝐒𝐜𝐫𝐞𝐞𝐧】Hesmor 10,1-Zoll digitaler Fotorahmen ist mit dem neuesten 1280x800 hochauflösenden IPS-Bildschirm ausgestattet, der alle Details Ihrer Fotos und Videos perfekt darstellt. Er verfügt auch über eine reaktionsschnelle kapazitive 10-Punkt-Touchscreen-Funktion, mit der Sie die Wiedergabereihenfolge, den Bildzoom, das Verstecken/Veröffentlichen von Bildern, die Anzeige von Titeln, die einstellbare Helligkeit, den Schlafmodus und andere Bedürfnisse einfach einstellen können.\n【Eingebauter 𝟑𝟐𝐆 Speicher 】With 32GB eingebauten Speicher, können Sie rund 80.000 Fotos von 300KB/pc kostenlos zu speichern, halten Sie Ihre wertvollen Erinnerungen zur Hand. Darüber hinaus unterstützt der elektronische Fotorahmen bis zu 32 GB SD-Karte oder USB-Laufwerk für die Dateiverwaltung. Er erfüllt alle Ihre Anforderungen.\n【𝐄𝐚𝐬𝐲 𝐒𝐞𝐭𝐮𝐩】Nutzen Sie die kostenlose, lebenslange Frameo APP (für Android- und iOS-Geräte), um eine Wi-Fi-Verbindung herzustellen. In nur wenigen Minuten können Sie Fotos oder Videos hinzufügen, Untertitel zu Fotos hinzufügen und Ihre Erlebnisse überall und jederzeit aufzeichnen. Sie können auch bis zu 512 Freunde oder Familienmitglieder einladen, um gemeinsam einen tollen Moment zu erleben.\n【Auto-Rotation & 𝐌𝐮𝐥𝐭𝐢-𝐅𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐚𝐥】Die digitalen Bilderrahmen drehen Ihre Fotos automatisch und bieten die Flexibilität, sie im Hoch- oder Querformat zu betrachten. Der große digitale Bilderrahmen passt auch die Helligkeit an, um ein perfektes visuelles Erlebnis zu bieten. Er unterstützt Musik-, Video-, Foto-, Kalender- und Uhrfunktionen sowie die automatische Ein- und Ausschaltfunktion.\n【𝐁𝐞𝐬𝐭 𝐂𝐡𝐨𝐢𝐜𝐞 𝐅𝐨𝐫 𝐆𝐢𝐟𝐭𝐬】Dieser digitale Fotorahmen mit WLAN nutzt die Vorteile des sofortigen Austauschs, um Erinnerungen festzuhalten, So können Sie die letzten schönen Momente mit Ihren Lieblingsmenschen teilen, wo und wann immer Sie wollen. Es ist das beste Geschenk für Ihre Familie, Freunde und Lieben am Muttertag, Vatertag, Erntedank, Weihnachten, Geburtstag, Hochzeit und alle wichtigen Feiertage.\nTechnische Details: Color schwarz, Size 10.1 schwarz\nAbmessungen: Height 0.98818897537 Zoll, Length 11.4960629804 Zoll, Width 8.3858267631 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Ein **digitaler Bilderrahmen** ist eine wunderbare Möglichkeit, um immer wieder an schöne Momente erinnert zu werden und deine Oma an deinem Leben teilhaben zu lassen.\n\nSelbst wenn deine Oma technisch nicht so versiert ist, sind die meisten Modelle sehr einfach zu bedienen. Du kannst von deinem Handy aus die Fotos direkt auf den Bilderrahmen schicken, und sie erscheinen dann automatisch auf dem Display.\n\nWie alt wird deine Oma denn?",
+      "weight": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "searchAmazon",
+      "description": "Produkte auf Amazon.de suchen",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Der Suchbegriff" },
+          "page": {
+            "type": "number",
+            "description": "Die Seite der Suchergebnisse, die zurückgegeben werden soll."
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Du bist GeschenkIdee.io, ein hilfreicher Assistent zum finden von Geschenken. Heute ist Samstag, der 07. Mai 2024."
+    },
+    {
+      "role": "user",
+      "content": "Hilf mir"
+    },
+    {
+      "role": "assistant",
+      "content": "Natürlich! Dir zu helfen, das perfekte Geschenk zu finden, ist mein einziger Lebenszweck. 😊\n\nFür wen suchst du ein Geschenk?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Sohn"
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"schnitzen lernen kinder\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nSchnitzen für Kinder – 55 coole Projekte mit Fotoanleitung zur Förderung der Konzentration & Feinmotorik: Sicher kreativ, naturverbunden, drinnen & draußen\nMarke: undefined | Preis: 19.99€ \nFeatures:\nundefined\nTechnische Details: Color Orange\nAbmessungen: Height 11 Zoll, Length 8.5 Zoll, Weight 0.94 pounds, Width 0.32 Zoll\n------\nKosmos 604608 AllesKönnerKiste Schnitzen Komplett-Set, mit Kinder-Schnitzmesser, Lindenholz-Block, Boot selber schnitzen, Schnitz-Set, Bastel-Set für Kinder ab 8 Jahre\nMarke: Kosmos | Preis: 18.67€ (eigentlich 29.99€, also 38% gespart)\nFeatures:\nAusgezeichnet mit „Das goldene Schaukelpferd 2016“ in der Kategorie „Für Künstler und Baumeister“\nKomplett-Set Schnitzen: auspacken und loslegen\nMit original Opinel-Kinderschnitzmesser\nKindgerechte Anleitung erklärt die Grundlagen des sicheren Schnitzens\nTechnische Details: Color Bunt, ReleaseDate 2022-01-27T00:00:01Z, NumberOfItems 1\nAbmessungen: Height 2.2440944859 Zoll, Length 8.6220472353 Zoll, Weight 0.881849048 pounds, Width 11.6141732165 Zoll\n------\n50 Schnitz-Projekte\nMarke: COPPENRATH, MÜNSTER | Preis: 10.00€ \nFeatures:\nundefined\nTechnische Details: Color Silver\nAbmessungen: Height 5.74802 Zoll, Length 4.21259 Zoll, Width 1.45669 Zoll\n------\nMeine Schnitzwerkstatt: mit Opinel Kinderschnitzmesser\nMarke: Kosmos | Preis: 22.00€ \nFeatures:\nSofort loslegen: Mit Kindermesser der Qualitätsmarke Opinel.\n35 Schritt-für-Schritt-Anleitungen zeigen wie einfach es geht.\nDas Plus zum Buch: Die kostenlose KOSMOS-PLUS-App mit Videoanleitungen.\n2. Auflage\nTechnische Details: Color Yellow, ReleaseDate 2019-01-01T00:00:01Z\nAbmessungen: Height 9.17321 Zoll, Length 8.97636 Zoll, Weight 1.0582188576 pounds, Width 0.66929 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Viele Jungs lieben es, kreativ zu sein und mit ihren Händen zu arbeiten. Ein **Schnitz-Set für Kinder** könnte also eine großartige Geschenkidee für deinen Sohn sein.\n\nDie Sets enthalten in der Regel ein kindgerechtes Schnitzmesser und Holzblöcke, aus denen dein Sohn dann eigene Figuren schnitzen kann. Das ist nicht nur eine tolle Möglichkeit, seine Feinmotorik zu fördern, sondern auch seine Kreativität und Konzentration.\n\nWie alt ist dein Sohn denn?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Er wird 6"
+    },
+    {
+      "role": "assistant",
+      "content": "Toll! Dann warten wir mit dem Schnitzen vielleicht noch ein paar Jahre. Man könnte es zwar unter Aufsicht versuchen, aber bei den Produkten steht meistens ein Mindestalter von 8 Jahren.\n\nErzähl mir doch noch ein bisschen mehr über deinen Sohn. Was mag er gerne? Hat er besondere Interessen oder Hobbys?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Er ist gern draußen"
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"becherlupe 6 jahre\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nKizplays Forscherset für Kinder, Fernglas für Kinder 22-teiliges Entdecker Set mit Insektenfänger, Kompass, Becherlupe, Mikroskop Camping, Naturerkundungen und Abenteuer Geschenk für Kinder\nMarke: kizplays | Preis: 19.99€ \nFeatures:\n【22-teiliges Forscherset für Kinder】- Hinweis: Einige Produkte werden mit größeren, transparenten Insektenboxen anstelle der gelben Insektenboxen geliefert. Vielen Dank für Ihr Verständnis. Dieses Insektenfang-Set für Kinder enthält: Fernglas, Kompass, Schmetterlingsnetz, Pfeife, Lupe, Pinzette, Zertifikat, Insektenklemme, Insektenbehälter, 1 Packung gefälschte Insekten und 1 Tragebeutel mit Kordelzug. Das Naturforscher-Kit ist klein und tragbar genug für kleine Kinderhände.\n【Spielerisches Lernen】 - Dieses Set ermutigt zu liebevollen und wissenschaftlichen Entdeckungen in der Natur. Egal, ob drinnen oder draußen, der kleine Rucksack ermöglicht ein einfaches Tragen überall hin. Es eignet sich hervorragend für sportliche Spiele, Jagd, Naturwanderungen und Wildnisexpeditionen.\n【Stoßfest & Rutschfest 4x30 Fernglas】 - Das Fernglas mit vierfacher Vergrößerung besteht aus hochwertigem, stoßfestem und flexiblem Gummi. Es ist bequem und einfach zu fokussieren und wird mit einem Band geliefert, das das Tragen erleichtert und ein Herunterfallen verhindert. Es eignet sich perfekt zur Untersuchung von Pflanzen, Insekten und Felsen, zur Vogelbeobachtung, für Expeditionen in die Wildnis, Naturerkundungen, Wildtierbeobachtungen, Sport und mehr.\n【Hochwertige Materialien】- Dieses Outdoor-Explorationskit enthält mehrere Artikel und Zubehörteile, die aus den besten, ungiftigen und langlebigen Materialien hergestellt sind. Sie sind speziell entwickelt, um den täglichen Belastungen standzuhalten, damit Ihre Kinder lange Freude daran haben!\n【ideale Geschenk für Kinder】 - Dieses Set ist das ideale Geschenk für Ihren Sohn, Ihre Tochter, Ihren Neffen, Ihre Nichte, Ihren Enkel, Ihre Schüler, Ihre Nachbarn oder andere Kinder - egal, ob zu Halloween, zu den Ferien, im Sommer oder das ganze Jahr über. Der leichte und robuste Rucksack macht das Verstauen und Tragen einfach und bequem.\nTechnische Details: Color Grün\nAbmessungen: Height 3.9763779487 Zoll, Length 8.9370078649 Zoll, Weight 1.5211896078 pounds, Width 7.7165354252 Zoll\n------\nBFYHVP Fernglas Kinder, Forscherset Für Kinder Ab 6 8 10, Lupe Kinder, Entdecker Set Kinder Ab 8 5, Geschenke 5 Jährige Jungs, Forscherset Kinder Ab 4, Fernglas Kinder Ab 6 Jahre, Becherlupen Kinder\nMarke: BFYHVP | Preis: 7.99€ (eigentlich 8.99€, also 11% gespart)\nFeatures:\n【Spielerisches Lernen】 Dieses Produkt besteht aus einer doppelten Spiegelbeobachtungsbox, Gurten, Insektenklemmen und Pinzette. This set of scientific discoveries encourages love in nature. This small backpack can be easily carried anywhere, whether indoors or outdoors. It is an ideal place for sports events, hunting, nature walks, and wilderness exploration. Suitable for children and insects to play reconnaissance cases detektivkoffer.\n【Lupe Insekten Sammelbox】Die lupenglas für kindert eine 8-fache Vergrößerung, sodass Sie Insekten besser sehen können.Lupe Insekten Sammelbox eignet sich perfekt zum Studium von Pflanzen, Insekten und Steinen, zur Vogelbeobachtung, für Feldabenteuer, zur Erkundung der Natur, zur Tierbeobachtung, für Sport und mehr.\n【 High quality materials 】 The outdoor explorer set for children is made of high-quality ABS and acrylic, which can be used for a long time. Children will like brightly colored designs. Equipped with shoulder straps for easy transportation and fall prevention. These insekten kinder are built very realistically.\n【ideale Geschenk für Kinder】 Ob es Halloween, Urlaub, Sommer oder das ganze Jahr über ist, dieses Set von terrarium kinder ist ein ideales Geschenk für Söhne, Töchter, Neffen, Nichten, Enkelkinder, Studenten, Nachbarn oder andere Kinder. Der leichte und robuste Rucksack macht Aufbewahrung und Tragen einfach und bequem.\n【Pädagogisches Spielzeug】 Wenn Kinder neugierig auf das Leben von Blumen, Pflanzen und Arten in der Natur sind und gerne den Geräuschen von bug catcher lauschen. Und es gibt den Wunsch, sie zu erforschen, zu ermutigen, zu unterstützen und zu ermutigen, sich der Natur zu nähern, was einen sehr positiven Einfluss auf Wissen, Vorstellungskraft, Zusammenarbeit und Ausdruck hat. Intelligenz, sogar Persönlichkeit und zwischenmenschliche Fähigkeiten sind sehr hilfreich.\nTechnische Details: \nAbmessungen: Height 0.393700787 Zoll, Length 3.93700787 Zoll, Width 3.93700787 Zoll\n------\nHABA 301512 - Terra Kids Beobachtungslupe\nMarke: HABA | Preis: 12.99€ (eigentlich 14.99€, also 13% gespart)\nFeatures:\nDas Terra Kids Fernglas mit Tasche von HABA ist immer griffbereit und animiert zum Beobachten und Entdecken in der Natur\nDie Vier-fache Vergrößerung bringt weit Entferntes nahe heran und hilft Nachwuchsforschern beim Beobachten\nInklusive Wissenskarten zur Einordnung der Entdeckungen und praktischer Tasche mit Befestigungsmöglichkeit\nDas kleine Fernglas für Kinder liegt gut in der Hand, lässt sich an einer Kordel um den Hals tragen\nMit einer Tasche für den sicheren Transport im Gepäck, außen am Rucksack oder am Gürtel\nTechnische Details: Color Grün, ReleaseDate 2015-02-01T00:00:01Z, Size 13 cm, NumberOfItems 1\nAbmessungen: Height 4.3700787357 Zoll, Length 6.5354330642 Zoll, Weight 0.207 Kilogramm, Width 7.6771653465 Zoll\n------\nHABA 5241 Becherlupe, Kleinkindspielzeug\nMarke: HABA | Preis: 5.99€ \nFeatures:\nFÜR KLEINE NATURENTDECKER: Die vielseitigen Terra Kids-Beobachtungs- und Vergrößerungsgeräte von HABA sind perfekt für neugierige Kinder, die die Geheimnisse der Natur erkunden möchten.\nOPTISCHE VERGRÖSSERUNG: Diese Geräte sind optische Hilfsmittel, die die Natur genauer unter die Lupe nehmen lassen. Sie ermöglichen spannende Einblicke in Pflanzen, Tiere, Steine und Hölzer.\nSPIELERISCHES LERNEN: Kinder gewinnen spielerisch Erkenntnisse über die Natur und entwickeln ein tieferes Verständnis für ihre Umwelt. Dabei nutzen sie ihre eigenen Sinne.\nUMWELTBEWUSSTSEIN: Die Nutzung dieser Geräte fördert einen respektvollen Umgang mit der Natur und ein Verantwortungsbewusstsein für die Umwelt.\nPRAKTISCHE GESCHENKIDEE: Die Terra Kids Becherlupe von HABA ist ein handliches Geschenk für junge Naturbeobachter. Sie enthält einen 7 cm großen Kunststoff-Becher mit 2 Lupen und eine kleine Kunststoff-Spinne für detaillierte Beobachtungen.\nTerra Kids Becherlupe\nmit Lupe\nBecherlupe\nTechnische Details: Color Grün, ReleaseDate 2011-12-01T00:00:01Z, Size 7 cm, NumberOfItems 1\nAbmessungen: Height 3.6614173191000003 Zoll, Length 3.58 Zoll, Weight 0.1322773572 pounds, Width 2.8740157451 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Da dein Sohn gerne draußen ist, könnte er sich über ein **Forscherset für Kinder** freuen. Mit einem solchen Set kann er die Natur erkunden, Insekten beobachten und vieles mehr.\n\nDie Sets enthalten meistens verschiedene Tools wie eine Becherlupe, ein Fernglas, einen Kompass und vieles mehr. Damit kann er die Welt um sich herum entdecken und spannende Abenteuer erleben.\n\nWas ist denn das Budget für das Geschenk?",
+      "weight": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "searchAmazon",
+      "description": "Produkte auf Amazon.de suchen",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Der Suchbegriff" },
+          "page": {
+            "type": "number",
+            "description": "Die Seite der Suchergebnisse, die zurückgegeben werden soll."
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}

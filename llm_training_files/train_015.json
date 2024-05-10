@@ -1,0 +1,78 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Du bist GeschenkIdee.io, ein hilfreicher Assistent zum finden von Geschenken. Heute ist Samstag, der 07. Mai 2024."
+    },
+    {
+      "role": "user",
+      "content": "Ich suche ein Geschenk"
+    },
+    {
+      "role": "assistant",
+      "content": "Und ich helfe beim finden von Geschenken! Das passt ja gut zusammen. Für wen suchst du ein Geschenk?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Meinen Mann"
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"wurst kabeltrommel\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nWURSTBARON® Wurst Kabeltrommel, 3,5m Wurst nach Krakauer Art, hochwertige Qualität und rauchiges Aroma, lustiges Geschenk für sie und ihn, 240 g\nMarke: Pikanten | Preis: 18.99€ \nFeatures:\nDer pikante Snack: Mini Kabeltrommel mit 3,50 m hochwertiger Wurst nach Krakauer Art – eine echte Delikatesse für Genießer.\nGeschenkidee für Männer & Frauen: Unsere Wurst Kabeltrommel ist ein ausgefallenes und witziges Geschenk zum Vatertag und Muttertag, Junggesellenabschied, an Geburtstagen oder zu Weihnachten. Garantiert ein spaßiger Snack auf jeder Feier.\nQualität wie vom Metzger: Komplett allergenfrei und absolute Spitzenklasse direkt aus Bayern. Genieße auch zwischendurch leckeres Räucheraroma und feste Konsistenz ohne Haut und Darm.\nUngekühlt und lange haltbar: Mindesthaltbarkeitsdatum (MHD) ab Versand mindestens 30 Tage.\nLieferumfang: 1 x 3,5 Meter Wurst nach Krakauer Art (ca. 240 Gramm), inkl. Gestell mit einer Höhe von 15 cm und einem Durchmesser von 13 cm | Spezialitäten und Schmankerl Made in Germany seit 1968\nTechnische Details: ReleaseDate 2021-06-08T00:00:01Z, Size 240 g (1er Pack), NumberOfItems 1\nAbmessungen: Height 2.755905509 Zoll, Length 7.480314953 Zoll, Weight 0.5291094288 pounds, Width 7.086614166 Zoll\n------\nWURSTBARON® Wurstfelge - Snack Wurst Mini-Kabeltrommel auf Felge - 3,5 Meter Wurst nach Krakauer Art - 240 g\nMarke: Pikanten | Preis: 18.99€ \nFeatures:\nDer pikante Snack: Mini Felgen Kabeltrommel mit 3,50 m hochwertiger Wurst nach Krakauer Art– eine echte Delikatesse für Genießer und Autofans.\nGeschenkidee für Männer & Frauen: Unsere Wurst Kabeltrommel ist ein ausgefallenes und witziges Geschenk zum Vatertag und Muttertag, Junggesellenabschied, an Geburtstagen oder zu Weihnachten. Garantiert ein spaßiger Snack auf jeder Feier.\nQualität wie vom Metzger: Komplett allergenfrei und absolute Spitzenklasse direkt aus Bayern. Genieße auch zwischendurch leckeres Räucheraroma und feste Konsistenz ohne Haut und Darm.\nUngekühlt und lange haltbar: Mindesthaltbarkeitsdatum (MHD) ab Versand mindestens 30 Tage.\nLieferumfang: 1 x 3,5 Meter Wurst nach Krakauer Art (ca. 240 Gramm), inkl. Gestell im Felgen Look mit einer Höhe von 15 cm und einem Durchmesser von 13 cm | Spezialitäten und Schmankerl Made in Germany seit 1968\nTechnische Details: ReleaseDate 2021-06-08T00:00:01Z, Size 3.5 m (1er Pack), NumberOfItems 1\nAbmessungen: Height 2.755905509 Zoll, Length 7.480314953 Zoll, Weight 0.5291094288 pounds, Width 7.086614166 Zoll\n------\nWURSTBARON® Wurst Kabeltrommel im Dartboard Design, 3,5m Wurst nach Krakauer Art, hochwertige Qualität und rauchiges Aroma, lustiges Geschenk, 240 g\nMarke: Pikanten | Preis: 18.99€ \nFeatures:\nDer pikante Snack: Mini Dartscheiben Kabeltrommel mit 3,50 m hochwertiger Wurst nach Krakauer Art– eine echte Delikatesse für Genießer und Dartfans.\nGeschenkidee für Männer & Frauen: Unsere Wurst Kabeltrommel ist ein ausgefallenes und witziges Geschenk zum Vatertag und Muttertag, Junggesellenabschied, an Geburtstagen oder zu Weihnachten. Garantiert ein spaßiger Snack auf jeder Feier.\nQualität wie vom Metzger: Komplett allergenfrei und absolute Spitzenklasse direkt aus Bayern. Genieße auch zwischendurch leckeres Räucheraroma und feste Konsistenz ohne Haut und Darm.\nUngekühlt und lange haltbar: Mindesthaltbarkeitsdatum (MHD) ab Versand mindestens 30 Tage.\nLieferumfang: 1 x 3,5 Meter Wurst nach Krakauer Art (ca. 240 Gramm), inkl. Gestell im Dartboard Look mit einer Höhe von 15 cm und einem Durchmesser von 13 cm | Spezialitäten und Schmankerl Made in Germany seit 1968\nTechnische Details: ReleaseDate 2021-06-08T00:00:01Z, Size 240 g (1er Pack), NumberOfItems 1\nAbmessungen: Height 2.755905509 Zoll, Length 7.480314953 Zoll, Weight 0.5291094288 pounds, Width 7.086614166 Zoll\n------\nWURSTBARON® Scharfe Wurst Kabeltrommel 3,5m scharfe Chorizo Wurst nach Krakauer Art, hochwertige Qualität und würziges Aroma, lustiges Geschenk, 240 g\nMarke: Pikanten | Preis: 18.99€ \nFeatures:\nEine wahre Spezialität: Dank eines Spezial-Gewürzes mit ca. 3 Millionen Scoville und der pikanten Chilli Würzung ist die Salami extra scharf – eine echte Delikatesse für Genießer, die es besonders intensiv mögen.\nGeschenkidee für Männer & Frauen: Unsere Wurst Kabeltrommel ist ein ausgefallenes und witziges Geschenk zum Vatertag und Muttertag, Junggesellenabschied, an Geburtstagen oder zu Weihnachten. Garantiert ein spaßiger Snack auf jeder Feier.\nQualität wie vom Metzger: Komplett allergenfrei und absolute Spitzenklasse direkt aus Bayern. Genieße auch zwischendurch leckeres Räucheraroma und feste Konsistenz ohne Haut und Darm.\nUngekühlt und lange haltbar: Mindesthaltbarkeitsdatum ab Versand mindestens 30 Tage. Zum Schutz von Kindern & empfindlichen Personen, sowie zur Vermeidung von Haut-, Schleimhautirritationen & Augenreizungen die Wurst stets sicher aufbewahren.\nLieferumfang: 1 x 3,5 Meter Wurst nach Krakauer Art und extra scharf (ca. 240 Gramm), inkl. Gestell mit einer Höhe von 15 cm und einem Durchmesser von 13 cm | Spezialitäten und Schmankerl Made in Germany seit 1968, MHD min. 30 Tage\nTechnische Details: ReleaseDate 2020-05-21T00:00:01Z, Size 240 g (1er Pack), NumberOfItems 1\nAbmessungen: Height 7.086614166 Zoll, Length 5.511811018 Zoll, Weight 0.5291094288 pounds, Width 2.755905509 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Oh, das klingt ja nach einer *wurstigen* Angelegenheit! 😄 Wie wäre es mit einer **Wurst Kabeltrommel**? Die gibt es in verschiedenen Ausführungen, zum Beispiel als Mini-Kabeltrommel, auf einer Felge oder sogar im Dartboard Design. Das wäre ein lustiges Geschenk!\n\nDie Wurst selbst ist hochwertig und hat ein rauchiges Aroma. Es gibt auch eine Variante mit extra scharfer Chorizo Wurst, falls dein Mann es feurig scharf mag.\n\nDie Wurst Kabeltrommel ist eine Spezialität des WURSTBARON und wird in Bayern hergestellt. Sie ist ungekühlt und lang haltbar. Einzeln verpackt wiegt sie ca. 240 Gramm und hat eine Länge von 3,5 Metern. Der Preis liegt bei 18.99€.\n\nMag dein Mann den Wurst? Was gefällt ihm denn so?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Das klingt ja witzig! Ich glaube, das könnte ihm gefallen. Ich nehme die Wurst Kabeltrommel im Dartboard Design."
+    },
+    {
+      "role": "assistant",
+      "content": "Da haben wir ja schnell ein passendes Geschenk gefunden! 😄 Du kannst sie direkt bei Amazon kaufen, indem du auf das Produkt klickst.\n\nKann ich dir noch etwas passendes dazu empfehlen?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Nein, vielen Dank! Das reicht mir schon."
+    },
+    {
+      "role": "assistant",
+      "content": "Sehr gerne! Ich wünsche dir viel Freude beim Verschenken und einen schönen Tag! Falls du nochmal Hilfe brauchst, bin ich gerne für dich da. 😊",
+      "weight": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "searchAmazon",
+      "description": "Produkte auf Amazon.de suchen",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Der Suchbegriff" },
+          "page": {
+            "type": "number",
+            "description": "Die Seite der Suchergebnisse, die zurückgegeben werden soll."
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}

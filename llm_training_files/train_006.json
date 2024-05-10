@@ -1,0 +1,51 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Du bist GeschenkIdee.io, ein hilfreicher Assistent zum finden von Geschenken. Heute ist Freitag, der 02. März 2024."
+    },
+    {
+      "role": "user",
+      "content": "Ich suche was ganz besonderes für meine Frau zur Hochzeit."
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"dyson airwrap\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nDyson Airwrap Complete Verschiedene Haartypen und Styles, Fuchsia vollständig, Normale Größe, 310731-01\nMarke: Dyson | Preis: 688.50€ \nFeatures:\nWattage: 1600.0 watt\nTechnische Details: Color Fuchsia, ReleaseDate 2019-12-01T00:00:01Z, Size Normale Größe, NumberOfItems 1\nAbmessungen: Height 6.7 Zoll, Length 15.3 Zoll, Weight 1.4550509292 pounds, Width 7.5 Zoll\n------\nShark FlexStyle Limited Edition Geschenkset 5-in-1 Air Styler & Haartrockner, Curler, FrizzFighter Finishing Tool, Ovalbürste, Konzentrator, Aufbewahrungstasche, Keine Hitzeschäden, Türkis HD450TLEU\nMarke: Shark | Preis: 225.99€ (eigentlich 299.99€, also 25% gespart)\nFeatures:\nZEIGE DEINEN STIL: Mit einer einzigen Drehung verwandelt sich der Shark FlexStyle von einem leistungsstarken Haartrockner in einen vielseitigen Multi-Style-Styler. Für jeden Haartyp. Jedes Können. Für alle Haartypen.\nGLÄTTET FLIEGENDE HAARE: Das FrizzFighter Finishing Tool zieht automatisch Haare an, bekämpft Frizz und glättet fliegende Härchen für ein ultimatives, hochglänzendes Finish bei trockenem, glattem oder geglättetem Haar.\n2 SETS VON AIR CURLERS: Verändere die Art, wie du Locken machst. Die Coanda-Technologie verwendet Luftkraft, um mühelose Locken in Sekunden zu erzeugen. Enthält 32mm- und 24mm-Zylinder für lockere und enge Locken.\nSTYLEN WÄHREND DES TROCKNENS, OHNE HITZESCHÄDEN: Misst Wärme 1.000 Mal pro Sekunde, für gleichbleibende Lufttemperatur. Keine extreme Hitze. Mehr Glätte und Glanz, weniger Frizz und fliegende Härchen* (*im Vergleich zum Lufttrocknen).\nLIMITIERTE EDITION GESCHENKSET BEINHALTET: Shark FlexStyle, FrizzFighter Finishing Tool, Air Curlers (32mm & 24mm), Ovalbürste, Konzentrator, Alligatorclips, Aufbewahrungstasche. Gewicht: 700g. Farbe: Türkis\nTechnische Details: Color Blaugrün, ReleaseDate 2023-11-01T00:00:01Z, Size 5-in-1\nAbmessungen: Height 1.79921259659 Zoll, Length 13.49999998623 Zoll, Weight 1.543235834 pounds, Width 1.79921259659 Zoll\n------\nAirstyler 6 in 1, Hair styler set mit 200 Millions Lonic, Haarstyler mit Rundbürstenföhn, Föhnbürste, Auto Lockenstab, Glättbürste für mehr Volumen, Glätten, Locken und Föhnen von trockenem Haar\nMarke: Atopskins | Preis: 69.52€ \nFeatures:\n💯【Neue Haarstyler 2024】Dieses vielseitige hair styler 6 in 1 Set wird mit 6 austauschbaren Bürstenaufsätzen geliefert und macht das Föhnen, Glätten, Locken, Volumengeben und Massieren der Kopfhaut zum Kinderspiel. Mit der 6 in 1 Airstyler können Sie mühelos verschiedene Frisuren für unterschiedliche Haarlängen kreieren. Die exquisite Verpackung macht sie auch zu einem idealen Geschenk für Freunde, Familie oder andere geliebte Menschen, besonders als Weihnachtsgeschenk für Frauen.\n💯【6 in 1 Hairstyler - Airstyler 】Dieses 6 in 1 Haarstyler Set enthält 1 * Haartrockner, 1 * Warmluftbürste, 2 * Air Lockenstab, 1 * Volumen Rundbürstenföhn, 1 * Massage Heißluftbürste. Erfüllen Sie alle Ihre unterschiedlichen Bedürfnisse, ist geeignet für Familien, Hochzeiten, Geschäftsreisen und Urlaub, um Ihnen die Freiheit zu geben, Ihr Haar so zu stylen, wie Sie es möchten! Effizient und ermöglicht es Ihnen, wunderschöne Frisuren effizient zu erzielen, wodurch Sie Zeit sparen.\n💯【3 Temperatureinstellungen】1: Niedrige Temperatur, HOHE WINDGESCHWINDIGKEIT, für trockenes Haar / feines Haar, geeignet für den Sommer. 2: Mittlere Temperatur, HOHE WINDGESCHWINDIGKEIT, für halbtrockenes Haar / normales Haar, zum Stylen geeignet. 3: Hohe Temperatur, HOHE WINDGESCHWINDIGKEIT für nasses Haar / dickes und lockiges Haar, geeignet für den Wintergebrauch, trockenes Haar schnell. Der Air styler erfüllt alle Ihre Stilbedürfnisse und lässt Sie strahlen wie eine Königin.\n💯【Curly All In One Air Styler】Ein starker Luftstrom strömt aus dem Lockenstabaufsatz und bildet kontinuierlich einen Luftstrom im Uhrzeigersinn um den Lockenstab, der den Coanda-Effekt verstärkt und dafür sorgt, dass das Haar automatisch an der Oberfläche haften bleibt. Erzeugt voluminöse, glatte und natürliche Locken ohne extreme Erhitzung. Tragen Sie gleichzeitig Verbrühungsschutzhandschuhe, wenn Sie den abnehmbaren Blaskopf wechseln, um Verbrennungen zu vermeiden.\n💯【Einzigartiges Design】Das Air styler Set kombiniert einen Haartrockner mit dem beliebten Heißluftbürste nkopf-Design. Sie können ihn mit verschiedenen Bürstenköpfen kombinieren, um trendige Looks zu kreieren. Es hat ein einzigartiges ovales Design, das hilft, das Haar zu glätten und Verwicklungen zu vermeiden. Wenn Sie Fragen zum Produkt haben, setzen Sie sich bitte rechtzeitig mit uns in Verbindung. Wir werden diese so schnell wie möglich beantworten und lösen.\nTechnische Details: Color Beige\nAbmessungen: Height 3.149606296 Zoll, Length 12.598425184 Zoll, Width 8.661417314 Zoll\n------\nTowwoo 5 in 1 Haartrockner Warmluftbürste Set, Air Styler mit 5 Aufsätze zum Trocknen, Glätten, Volumen und Stylen, Ionen Pflege, 1000W Curler Richtkamm Lockenstab für Salon Hairstyling\nMarke: Towwoo | Preis: 43.99€ \nFeatures:\n❤️【𝟱-𝗶𝗻-𝟭 𝗪𝗮𝗿𝗺𝗹𝘂𝗳𝘁𝗯ü𝗿𝘀𝘁𝗲 𝗦𝗲𝘁】Die Haartrockner verfügt über 5 abnehmbare Bürstenköpfe: 1 Haartrockner, 1 Glättbürste, 1 Warmluftbürste, 2 Lockenstab. Sie können zum Trocknen, Glätten, Locken, Volumen und Stylen verwendet werden, ein Gerätesatz, der Ihren unterschiedlichen Anforderungen gerecht wird. Der Bürstenkopf lässt sich ganz einfach per Knopfdruck an der Bürste austauschen.\n❤️【𝟯 𝗧𝗲𝗺𝗽𝗲𝗿𝗮𝘁𝘂𝗿𝘀𝘁𝘂𝗳𝗲𝗻】Unsere Warmluftbürste bietet 3 Temperaturmodi: niedrige Temperatur, 61–63 °C, geeignet für feines, trockenes Haar; mittlere Temperatur, 96–98 °C, geeignet für mittleres Haar, geeignet zum Stylen von halbtrockenem Haar; hohe Temperatur, 136 -140 °C, geeignet für dickes Haar, für schnellen Trocknen nasser Haare im Winter.\n❤️【𝗜𝗼𝗻𝗲𝗻 𝗣𝗳𝗹𝗲𝗴𝗲】Die 1000W Warmluftbürste verfügt über einen eingebauten leistungsstarken Motor mit 35,000 U/min, der über eine starke Windkraft verfügt und eine große Menge negativer Ionen freisetzt, um statische Elektrizität auszugleichen, Haarkräuselungen zu vermeiden und das Haar glänzender zu machen. Erzeugt volle, glatte, natürlich aussehende Locken ohne übermäßige Hitze und reduziert Haarschäden.\n❤️【𝗘𝗶𝗻𝗳𝗮𝗰𝗵 𝘇𝘂 𝘃𝗲𝗿𝘄𝗲𝗻𝗱𝗲𝗻】Dieser Föhnbürste ist stilvoll und funktional. Der ergonomische Griff ist leicht zu greifen und bequem zu bedienen. Der Air Styler den Coanda-Effekt, um das Haar durch einen starken Luftstrom an der Oberfläche haften zu lassen und so natürlichere Locken zu erzeugen, ohne dass eine Schiene erforderlich ist.\n❤️【𝗚𝗲𝘀𝗰𝗵𝗲𝗻𝗸𝗲 𝗳ü𝗿 𝗙𝗿𝗮𝘂𝗲𝗻】Dieses 5-in-1 Warmluftbürste hilft Frauen durch reichhaltige und leistungsstarke Funktionen dabei, wunderschöne Frisuren zu kreieren und macht Sie zu einer strahlenden Prinzessin oder Königin. Es ist eine gute Wahl, ob für den persönlichen Gebrauch oder als Geschenk. Wenn Sie Fragen zum Produkt haben, kontaktieren Sie uns bitte rechtzeitig.\nTechnische Details: Color Grau + Lila\nAbmessungen: Height 3.149606296 Zoll, Length 10.236220462 Zoll, Width 7.87401574 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Herzlichen Glückwunsch zu eurer Hochzeit! 😊 So ein besonderer Tag braucht natürlich auch ein besonderes Geschenk!\n\nIch weiß auch schon was, nämlich einen **Dyson Airwrap**! Den gibt es aktuell für 688.50€ in Fuchsia. Es gibt zwar auch Alternativen von anderen Herstellern, wie z.B. den **5-in-1 Air Styler & Haartrockner** von Shark FlexStyle als Limited Edition für 225.99€, aber ich würde dir auf jeden Fall zum **Original von Dyson** raten! Deine zukünftige Frau wird noch lange über dieses tolle Geschenk reden, das verspreche ich dir!\n\nWas ist denn der preisliche Rahmen, den du dir vorgestellt hast?",
+      "weight": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "searchAmazon",
+      "description": "Produkte auf Amazon.de suchen",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Der Suchbegriff" },
+          "page": {
+            "type": "number",
+            "description": "Die Seite der Suchergebnisse, die zurückgegeben werden soll."
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}

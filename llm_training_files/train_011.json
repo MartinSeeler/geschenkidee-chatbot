@@ -1,0 +1,91 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Du bist GeschenkIdee.io, ein hilfreicher Assistent zum finden von Geschenken. Heute ist Mittwoch, der 04. Mai 2024."
+    },
+    {
+      "role": "user",
+      "content": "Meine Freundin hat gerade das Skifahren für sich entdeckt. Was kann ich ihr schenken?"
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"sonnenschutz wintersport\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nPiz Buin Mountain Sun Cream, Sonnencreme, Sonnenschutz Wintersport, Hoher Schutz vor Sonnenbrand, Kälte und Wind, LSF 50+, 50 ml\nMarke: Piz Buin | Preis: 7.99€ \nFeatures:\nSpeziell entwickelt für den Einsatz im Hochgebirge: Mit fortschrittlichem UVA-/UVB Sonnenschutz. Die Sonnencreme ist für Gesicht und Körper geeignet. Ideal für den Winter beim Skifahren, Snowboarden oder Wandern\nDurch den Piz Buin “Cold Shield Complex” versorgt die Creme die Haut langanhaltend mit Feuchtigkeit und schützt gegen Wind und extreme Kälte. Zieht schnell ein. Schweiß- und wasserfest.\nEinfache Handhabung: Vor dem Sonnenbaden großzügig und gleichmäßig auftragen, geringe Mengen reduzieren den Schutz erheblich. Anwendung mehrfach wiederholen, besonders nach Schwitzen, Schwimmen oder Abtrocknen.\nIntensive Mittagssonne meiden, auch mit Sonnenschutz nicht zu lange in der Sonne aufhalten. Babys und Kleinkinder vor direkter Sonneneinstrahlung schützen, Kleidung und Sonnenschutzmittel mit hohem Lichtschutzfaktor (LSF größer 25) verwenden.\nLieferumfang: 1 x Piz Buin Mountain Sun Cream, LSF 50+, 50 ml, Art.-Nr. 8262801\nTechnische Details: Color white, ReleaseDate 2020-02-19T00:00:01Z, Size 50 ml (1er Pack), NumberOfItems 1\nAbmessungen: Height 5.7874015689 Zoll, Length 1.2204724397 Zoll, Weight 0.1543235834 Pfund, Width 2.362204722 Zoll\n------\nPIZ BUIN Mountain Lippenpflege LSF 30, feuchtigkeitsspendender Lippenpflegestift für Wintersportler, effektiver Wind- und Sonnenschutz für die Lippen, 4,9 g\nMarke: Piz Buin | Preis: 3.99€ \nFeatures:\nSpeziell für das Hochgebirge – Die Lippenpflege mit LSF 30 von PIZ BUIN ist ideal als Sonnenschutz im Winter beim Skifahren, Snowboarden oder Wandern geeignet\nEffektiver Sonnenschutz – Mit ihrem fortschrittlichen UVA- und UVB-Sonnenschutz ausgestattet, schützt die pflegende Lippencreme die Haut vor Sonnenbrand und Langzeitschäden\nIntensive Feuchtigkeit – Dank der feuchtigkeitsspendenden Formel versorgt die Lippenpflege trockene Lippen mit langanhaltender Feuchtigkeit für eine angenehme Zeit im Schnee\nSchutz vor Wind & Kälte – Der Lippenbalsam ist wasserfest und schützt die Lippen nicht nur vor der Sonne, sondern auch vor extremem Wind und Kälte auf und abseits der Piste\nLieferumfang: 1 x 4,9 g PIZ BUIN Mountain Lipstick mit Lichtschutzfaktor 30, effektiver Schutz vor UVA-/UVB-Strahlung sowie Wind, Kälte und Austrocknung, der Lippenstift passt in jede Jackentasche\nTechnische Details: Color Sensitive, ReleaseDate 2020-02-19T00:00:01Z, Size 4.9 g (Pack of 1), NumberOfItems 1\nAbmessungen: Height 3.543307083 Zoll, Length 2.755905509 Zoll, Weight 0.0110231131 Pfund, Width 1.968503935 Zoll\n------\nPIZ BUIN Mountain 2-in-1 Sonnencreme LSF 50+ (20 ml) und Lippenpflege LSF 30 (2,3 ml), feuchtigkeitsspendender Sonnenschutz speziell fürs Skifahren und Wandern, schützt vor Wind und Kälte\nMarke: Piz Buin | Preis: 9.00€ \nFeatures:\nSpeziell für das Hochgebirge – Die Kombi aus Sonnenmilch und Lippenpflegestift von PIZ BUIN ist ideal für den Sonnenschutz im Winter beim Skifahren, Snowboarden oder Wandern geeignet\nSchutz vor Wind & Kälte – Durch den PIZ BUIN \"Cold Shield Complex\" versorgt die Sonnencreme Gesicht und Lippen langanhaltend mit Feuchtigkeit und schützt gegen Wind und extreme Kälte\nSonnenschutz – Die Gesichts- und Lippencreme ist mit einem fortschrittlichen UVA- und UVB-Sonnenschutz mit Lichtschutzfaktor 50+ und 30 ausgestattet und schützt die Haut vor Langzeitschäden\nEinfache Handhabung – Deckel abnehmen für den Lippenpflegestift und den Deckel komplett abdrehen für die Sonnenmilch – so macht die Sonnencreme Skifahren besonders angenehm\nLieferumfang: 1 x 20 ml PIZ BUIN Mountain Sonnencreme mit Lichtschutzfaktor 50+ & 2,3 ml Lip Balm mit LSF 30, Antioxidans* Edelweiß hilft, die Haut vor Sonnenbrand und Hautalterung zu schützen\nTechnische Details: Color white, ReleaseDate 2021-09-26T00:00:01Z, Size 22.3 ml (1er Pack), NumberOfItems 1\nAbmessungen: Height 4.724409444 Zoll, Length 2.362204722 Zoll, Weight 0.0661386786 pounds, Width 2.362204722 Zoll\n------\nPiz Buin Mountain Sun Cream, Sonnencreme, Sonnenschutz Wintersport, Hoher Schutz vor Sonnenbrand, Kälte und Wind, LSF 30, 50 ml\nMarke: Piz Buin | Preis: 6.99€ \nFeatures:\nSpeziell entwickelt für den Einsatz im Hochgebirge: Mit fortschrittlichem UVA-/UVB Sonnenschutz. Die Sonnencreme ist für Gesicht und Körper geeignet. Ideal für den Winter beim Skifahren, Snowboarden oder Wandern\nDurch den Piz Buin “Cold Shield Complex” versorgt die Creme die Haut langanhaltend mit Feuchtigkeit und schützt gegen Wind und extreme Kälte. Zieht schnell ein. Schweiß- und wasserfest.\nEinfache Handhabung: Vor dem Sonnenbaden großzügig und gleichmäßig auftragen, geringe Mengen reduzieren den Schutz erheblich. Anwendung mehrfach wiederholen, besonders nach Schwitzen, Schwimmen oder Abtrocknen.\nIntensive Mittagssonne meiden, auch mit Sonnenschutz nicht zu lange in der Sonne aufhalten. Babys und Kleinkinder vor direkter Sonneneinstrahlung schützen, Kleidung und Sonnenschutzmittel mit hohem Lichtschutzfaktor (LSF größer 25) verwenden.\nLieferumfang: 1 x Piz Buin Mountain Sun Cream, LSF 30, 50 ml, Art.-Nr. 8262701\nTechnische Details: ReleaseDate 2021-06-09T00:00:01Z, Size 50 ml (1er Pack), NumberOfItems 1\nAbmessungen: Height 5.7874015689 Zoll, Length 1.2204724397 Zoll, Weight 0.11 pounds, Width 2.362204722 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Wie wäre es mit einer Sonnencreme speziell für den Wintersport? Die bietet besonderen Schutz vor der Sonne, die durch den Schnee stark reflektiert wird. Und zusätzlich wirkt sie gegen die Kälte und den Wind, der auf dem Berg und bei der Abfahrt ins Gesicht weht.\nEs gibt verschiedene Produkte von der Marke **Piz Buin**. Die **Mountain Sun Cream** gibt es mit **LSF 50+** für 7.99€ oder mit **LSF 30** für 6.99€. Für die Lippen gibt es auch einen **Lippenpflegestift** mit LSF 30 für 3.99€ oder eine Kombination aus Sonnencreme und Lippenpflege für 9.00€.\nWie viel möchtest du denn ausgeben?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Toller Tip! Ein bisschen teurer kann es schon sein."
+    },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"schlauchschal merinowolle damen\", \"maxPrice\": 3000}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nBuff Merino Lightweight Multifunktionstuch Solid Black Unisex Erwachsene\nMarke: Buff | Preis: 17.95€ (eigentlich 24.95€, also 28% gespart)\nFeatures:\nHergestellt aus 100% natürlicher, tierversuchsfreier Merinowolle.\nEthisch gewonnenes Merinogarn von in Australien aufgezogenen Schafen.\nNaturfasern mit höchster Temperaturregulierung.\nGewebe mit Fasern, die auf natürliche Weise das Bakterienwachstum verhindern, das zu Gerüchen führen kann.\nReflektierende Elemente, die bei Beleuchtung leuchten. Das Produkt ist nicht zur Verwendung als gut sichtbare persönliche Schutzausrüstung vorgesehen.\nTechnische Details: Color Solid Black, ReleaseDate 2018-11-27T00:00:01Z, Size Onesiz, NumberOfItems 1\nAbmessungen: Height 1.181102361 Zoll, Length 11.023622036 Zoll, Weight 0.110231131 Pfund, Width 8.661417314 Zoll\n------\nBuff Merino Lightweight Multifunktionstuch Solid Grey Unisex Erwachsene\nMarke: Buff | Preis: 17.95€ (eigentlich 22.95€, also 22% gespart)\nFeatures:\nHergestellt aus 100% natürlicher, tierversuchsfreier Merinowolle.\nEthisch gewonnenes Merinogarn von in Australien aufgezogenen Schafen.\nNaturfasern mit höchster Temperaturregulierung.\nGewebe mit Fasern, die auf natürliche Weise das Bakterienwachstum verhindern, das zu Gerüchen führen kann.\nTechnische Details: Color Solid Grey, ReleaseDate 2018-11-27T00:00:01Z, Size Onesiz, NumberOfItems 1\nAbmessungen: Height 1.181102361 Zoll, Length 11.023622036 Zoll, Weight 0.110231131 Pfund, Width 8.8582677075 Zoll\n------\nBuff Merino Heavyweight Multifunktionstuch Solid Pool Unisex Einheitsgröße, Blau\nMarke: Buff | Preis: 28.91€ (eigentlich 34.95€, also 17% gespart)\nFeatures:\nHergestellt aus 100 % natürlicher, tierversuchsfreier Merinowolle.\n500 g/m2 Dichte\nEthisch erzeugtes Merinogarn von Schafen aus australischer Aufzucht.\nNaturfasern mit höchster Temperaturregulierung.\nGewebe mit Fasern, die auf natürliche Weise das Bakterienwachstum verhindern, das zu Gerüchen führen kann.\nTechnische Details: Color Solid Pool, Size Einheitsgröße, NumberOfItems 1\nAbmessungen: \n------\nP.A.C. Merino Wolle Multifunktionstuch - Outdoortuch, nahtloses Halstuch, non-Mulesing Wolle, nachhaltiges Schlauchtuch, Schal, Kopftuch, Stirnband, verschiedenste Designs, Unisex, 10 Tragevarianten\nMarke: P.A.C. | Preis: 24.95€ \nFeatures:\n💎 MARKENQUALITÄT: Die Merino Wool Multifunktionstücher der Marke PAC sind Oeko-Tex zertifiziert und werden mit viel Liebe zum Detail sowie einem hohen Maß an Nachhaltigkeit und Qualität in Deutschland gefertigt\n💯 MULTIFUNKTIONAL: Das PAC Merino Wool Multifunktionstuch lässt sich aufgrund seiner zahlreichen Tragevarianten problemlos z. B. zu einer Mütze, einem Stirnband oder einem Haarband umfunktionieren und ist der ideale Begleiter für verschiedenste Ak\n✔️ HOHER TRAGEKOMFORT: Dieses funktionelle Naturprodukt kühlt im Sommer und wärmt im Winter wodurch ein Thermoregulierung entsteht und bietet ebenfalls dank seiner hochwertigen Merinowolle sowie der hohen Atmungsaktivität ein angenehmes Trag\n🥇 AUSGEZEICHNETER KUNDENSERVICE: Unser Kundenservice ist für dich da. Wir helfen dir bei Fragen gerne weiter. Der Kunde steht bei uns an erster Stelle\n📦 VERPACKUNG INKL. ANLEITUNG: Auf der Verpackung finden Sie eine Anleitung zu den Anwendungsmöglichkeit mit verschiedenen Knoten- und Bindetechniken\nTechnische Details: Color Multi Sunrise, Size Einheitsgröße\nAbmessungen: \n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Wie wäre es mit einem Schlauchschal aus Merinowolle? Die sind besonders weich und wärmen gut. Außerdem sind sie atmungsaktiv und regulieren die Temperatur. Das ist besonders praktisch beim Skifahren! Es gibt verschiedene Modelle von der Marke **Buff** oder **P.A.C.** in diversen Farben.\nWas ist denn die Lieblingsfarbe deiner Freundin?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Sie hat keine Lieblingsfarbe"
+    },
+    {
+      "role": "assistant",
+      "content": "Kein Problem, wir finden schon was passendes. Statistisch gesehen sind **schwarz** und **blau** die beliebtesten Farben bei Frauen, was Kleidung angeht. Daher würde ich dir zu dem **Buff Merino Lightweight Multifunktionstuch** in **Solid Black** für 17.95€ oder dem **Solid Pool** für 28.91€ raten.\nEtwas mutiger, aber auch sinnvoller, wäre ein Schlauchschal in **rot** oder **pink**. Das hätte den Vorteil, dass sie auf der Piste oder im schlimmsten Fall nach einem Sturz besser gesehen wird.\n\nWillst du eher auf Nummer sicher gehen oder etwas auffälligeres schenken?",
+      "weight": 1
+    },
+    {
+      "role": "user",
+      "content": "Ich nehme den schwarzen Schlauchschal"
+    },
+    {
+      "role": "assistant",
+      "content": "Super Wahl! Darüber wird sie sich bestimmt freuen. Der Schlauchschal ist aus 100% natürlicher Merinowolle und ethisch gewonnen. Er ist atmungsaktiv und reguliert die Temperatur. Außerdem verhindert er das Bakterienwachstum, das zu Gerüchen führen kann.\nDu kannst den Schal direkt auf Amazon bestellen, indem du auf das Produkt klickst.\n\nMöchtest du noch eine Kleinigkeit dazu schenken?",
+      "weight": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "searchAmazon",
+      "description": "Produkte auf Amazon.de suchen",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Der Suchbegriff" },
+          "page": {
+            "type": "number",
+            "description": "Die Seite der Suchergebnisse, die zurückgegeben werden soll."
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}

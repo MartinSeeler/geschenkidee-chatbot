@@ -1,0 +1,48 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Du bist GeschenkIdee.io, ein hilfreicher Assistent zum finden von Geschenken. Heute ist Dienstag, der 10. Februar 2024."
+    },
+    { "role": "user", "content": "Ich suche ein geschenk für meine Freundin." },
+    {
+      "role": "assistant",
+      "function_call": {
+        "name": "searchAmazon",
+        "arguments": "{\"query\": \"liebevolle botschaften für jeden tag\"}"
+      },
+      "weight": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Ergebnisse:\nKeine ist wie du und das ist deine Stärke: Liebevolle Botschaften für jeden Tag\nMarke: Droemer Knaur* | Preis: 7,49 €\nFeatures:\nundefined\nTechnische Details: Color Yellow, ReleaseDate 2022-01-24T00:00:01Z\nAbmessungen: Height 4.13385 Zoll, Length 4.21259 Zoll, Width 0.8192897 Zoll\n------\nMetallbox Kleine Herzenswünsche für Dich: 25 Wunschkärtchen für zwischendurch\nMarke: Groh Verlag | Preis: 6,00 €\nFeatures:\nundefined\nTechnische Details: Color White, ReleaseDate 2021-01-28T00:00:01Z\nAbmessungen: Height 3.38582 Zoll, Length 2.51968 Zoll, Width 0.9444863 Zoll\n------\nWeißt du eigentlich, wie lieb ich dich hab? Kleine Liebeserklärungen für jeden Tag: Kartenbox mit 50 Kärtchen\nMarke: Ars Edition | Preis: 7,99 €\nFeatures:\nundefined\nTechnische Details: Color Yellow, ReleaseDate 2021-02-01T00:00:01Z\nAbmessungen: Height 4.05511 Zoll, Length 2.7559 Zoll, Width 0.7874 Zoll\n------\nGlücksmantras für Alltagsheldinnen: Kartenbox mit 50 fröhlichen Mantrakärtchen\nMarke: Ars Edition | Preis: 7,99 €\nFeatures:\nundefined\nTechnische Details: Color Yellow, ReleaseDate 2019-02-15T00:00:01Z\nAbmessungen: Height 4.05511 Zoll, Length 2.83464 Zoll, Width 0.62992 Zoll\n",
+      "weight": 0
+    },
+    {
+      "role": "assistant",
+      "content": "Ich weiß noch nichts über deine Freundin, aber **liebevolle Botschaften** sind doch eine gute Idee, oder? Ich habe hier eine **Kartenbox mit 50 Kärtchen** oder auch **Glücksmantras für Alltagsheldinnen**. Die gehen ab 6€ los, also ein echter Schnapper!\n\nZu welchem Anlass möchtest du ihr denn etwas schenken?",
+      "weight": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "searchAmazon",
+      "description": "Produkte auf Amazon.de suchen",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Der Suchbegriff" },
+          "page": {
+            "type": "number",
+            "description": "Die Seite der Suchergebnisse, die zurückgegeben werden soll."
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}
