@@ -1,10 +1,15 @@
-import { UIState } from "@/lib/chat/actions";
+import { AI, UIState } from "@/lib/chat/actions";
+import { useAIState, useActions, useUIState } from "ai/rsc";
+import { useEffect, useState } from "react";
+import { SparklesIcon } from "./ui/icons";
 
 export interface ChatList {
   messages: UIState;
+  quickAnswers: string[];
+  onSelectAnswer: (answer: string) => Promise<void>;
 }
 
-export function ChatList({ messages }: ChatList) {
+export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
   if (!messages.length) {
     return null;
   }
@@ -14,6 +19,18 @@ export function ChatList({ messages }: ChatList) {
       {messages.map((message) => (
         <div key={message.id}>{message.display}</div>
       ))}
+      <div className="flex flex-col sm:flex-row items-start gap-2">
+        {quickAnswers.map((suggestion) => (
+          <button
+            key={suggestion}
+            className="flex items-center gap-2 px-3 py-2 text-sm transition-colors bg-zinc-50 hover:bg-zinc-100 rounded-xl cursor-pointer"
+            onClick={() => onSelectAnswer(suggestion)}
+          >
+            <SparklesIcon />
+            {suggestion}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

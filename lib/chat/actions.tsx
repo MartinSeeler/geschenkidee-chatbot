@@ -124,7 +124,11 @@ async function submitUserMessage(content: string): Promise<ClientMessage> {
 
   const aiState = getMutableAIState<typeof AI>();
 
-  const uiStream = createStreamableUI();
+  const uiStream = createStreamableUI(
+    <BotCard>
+      <SpinnerMessage />
+    </BotCard>
+  );
 
   // I want the string: "Heute ist Donnerstag, der 05. Mai 2024";
   const today = new Date();
@@ -251,7 +255,7 @@ async function submitUserMessage(content: string): Promise<ClientMessage> {
               <BotCard>
                 <AmazonSearchResults results={amazonResults} query={query} />
               </BotCard>
-              <BotMessage content={responseStream.value} />
+              <SpinnerMessage />
             </>
           );
           let assistentContent = "";
@@ -285,6 +289,17 @@ async function submitUserMessage(content: string): Promise<ClientMessage> {
               } else {
                 assistentContent += value;
                 responseStream.update(value);
+                uiStream.update(
+                  <>
+                    <BotCard>
+                      <AmazonSearchResults
+                        results={amazonResults}
+                        query={query}
+                      />
+                    </BotCard>
+                    <BotMessage content={responseStream.value} />
+                  </>
+                );
               }
             }
 
@@ -326,6 +341,11 @@ export const AI = createAI<AIState, UIState>({
     generateQuickAnswers,
   },
   initialUIState: [
+    // {
+    //   id: nanoid(),
+    //   role: "assistant",
+    //   display: <SpinnerMessage />,
+    // },
     // {
     //   id: nanoid(),
     //   role: "assistant",
