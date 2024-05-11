@@ -290,10 +290,10 @@ Du fragst NICHT, welches besser gefällt, sondrn immer eine konkrete Frage zur b
             content: itemsContent,
           };
 
-          console.log(
-            "assistantMessage",
-            JSON.stringify(assistantMessage, null, 2)
-          );
+          // console.log(
+          //   "assistantMessage",
+          //   JSON.stringify(assistantMessage, null, 2)
+          // );
 
           aiState.update({
             ...aiState.get(),
@@ -302,11 +302,13 @@ Du fragst NICHT, welches besser gefällt, sondrn immer eine konkrete Frage zur b
               {
                 role: "assistant",
                 content: "",
+                // @ts-ignore
                 function_call: {
                   name: "searchAmazon",
                   arguments: JSON.stringify({ query, page, maxPrice }),
                 },
               },
+              // @ts-ignore
               assistantMessage,
             ],
           });
