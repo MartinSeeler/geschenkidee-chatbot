@@ -142,11 +142,7 @@ async function submitUserMessage(content: string): Promise<ClientMessage> {
 
   const aiState = getMutableAIState<typeof AI>();
 
-  const uiStream = createStreamableUI(
-    <BotCard>
-      <SpinnerMessage />
-    </BotCard>
-  );
+  const uiStream = createStreamableUI(<SpinnerMessage />);
 
   // I want the string: "Heute ist Donnerstag, der 05. Mai 2024";
   const today = new Date();
