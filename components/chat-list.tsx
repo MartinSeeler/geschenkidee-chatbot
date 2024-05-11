@@ -19,7 +19,7 @@ export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
       {messages.map((message) => (
         <div key={message.id}>{message.display}</div>
       ))}
-      <div className="flex flex-col sm:flex-row items-start gap-2">
+      <div className="flex flex-col sm:flex-row flex-wrap items-start gap-2">
         {quickAnswers.map((suggestion) => (
           <button
             key={suggestion}
@@ -27,7 +27,7 @@ export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
             onClick={() => onSelectAnswer(suggestion)}
           >
             <SparklesIcon />
-            {suggestion}
+            <span className="text-nowrap">{suggestion}</span>
           </button>
         ))}
       </div>

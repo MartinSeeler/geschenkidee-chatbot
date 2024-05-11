@@ -81,14 +81,14 @@ export async function generateQuickAnswers(lastMessage: string): Promise<{
     const { partialObjectStream } = await streamObject({
       model: openai(quickAnsersModel),
       system: `Du bist Experte im Erstellen von Schnellantworten. Die Antworten beziehen sich immer auf den Text.
-Jede Schnellantwort enthält ein passendes Emoji. Der Text ist maximal 2 Wörter lang.
+Jede Schnellantwort kann ein passendes Emoji am Ende enthalten. Der Text ist maximal 2 Wörter lang.
 
 Beispiel:
 Frage: Hallo! Das ist schön, dass du nach einem Geschenk für deine Mama suchst. 😊 Um dir eine passende Geschenkidee vorzuschlagen, könntest du mir ein paar Informationen über deine Mama geben? Hat sie besondere Hobbys oder Interessen? Gibt es etwas, das sie besonders gerne mag oder schon lange haben wollte? Jede kleine Info hilft, um das perfekte Geschenk zu finden! 🎁✨
-Schnellantworten: ["👩‍🍳 Hobby-Bäckerin", "🍫 Naschkatze", "📺 Serien-Junki", "🌸 Blumenliebhaberin"]
+Schnellantworten: ["Hobby-Bäckerin 👩‍🍳", "Naschkatze 🍫", "Serien-Junki 📺", "Blumenliebhaberin 🌸"]
 
 Frage: Eine Hochzeit ist immer ein besonderer Anlass! Hast du schon eine Idee, was du dem glücklichen Paar schenken möchtest, oder brauchst du noch Vorschläge? 🎁💍🥂
-Schnellantworten: ["💒 Traditionelles", "💡 Kreatives", "💸 Günstiges", "🤔 Bin Ratlos"]
+Schnellantworten: ["Etwas traditionelles", "Etwas kreatives", "Etwas preiswertes", "Ich habe keine Idee"]
 
 Frage: Wie romantisch! 🌹 Hier sind einige Vorschläge für rote Rosen, die du für deine Frau kaufen kannst:
 
@@ -96,10 +96,22 @@ Frage: Wie romantisch! 🌹 Hier sind einige Vorschläge für rote Rosen, die du
 2. Blumenstrauß Farbtraum, Bunter mit Rosen, Inkalilien und Statice, 7-Tage-Frischegarantie - Preis: 31,99 €
 3. BoriYa Muttertagsgeschenk Infinity Rosen im Glas Engel - Ewige Rose in Angel Glaskuppel mit LED Licht und Perlen - Preis: 18,99 €
 Welcher Vorschlag gefällt dir am besten oder soll ich noch nach etwas anderem suchen?
-Schnellantworten: ["💐 Charlotte","🌈 Farbtraum","🌹 Infinity Rosen","👎 Nope"]
+Schnellantworten: ["Charlotte","Farbtraum","Infinity Rosen","Etwas anderes"]
 
 Frage: Ich bin GeschenkIdee.io und mein Spezialgebiet ist es, dir bei der Suche nach dem perfekten Geschenk zu helfen! Egal ob Geburtstage, Jubiläen, Feiertage oder einfach nur so - ich bin hier, um kreative und individuelle Geschenkideen für deine Liebsten zu finden. Sag mir einfach, für wen du ein Geschenk suchst und lass uns loslegen! 🎉
-Schnellantworten: ["👶 Baby", "👦 Kind", "👨 Erwachsener"]
+Schnellantworten: ["Meine Frau 👩‍❤️‍👨", "Mein bester Freund 👬", "Meine Oma 👵", "Mein Chef 👨‍💼"]
+
+Frage: Das klingt nach einer schönen Geste! 😊 Hat deine Frau bestimmte Lieblingsfarben, die ich bei der Geschenkauswahl berücksichtigen sollte?
+Schnellantworten: ["Rot 🟥", "Blau 🟦", "Grün 🟩", "Gelb 🟨", "Rosa 🩷"]
+
+Frage: Diese Karte ist perfekt, um deiner Frau zum Muttertag eine besondere Freude zu machen. Was hältst du von dieser Idee?
+Schnellantworten: ["Tolle Idee 👍", "Nicht so meins 👎", "Bin mir unsicher 🤔"]
+
+Frage: Wie wäre es mit einem 4er-Pack Basketball-Socken für Kinder in verschiedenen trendigen Farben? Sie sind atmungsaktiv, bequem und perfekt für sportliche Aktivitäten. Was denkst du darüber?
+Schnellantworten: ["Klasse! 👍", "Geht so ... 😐", "Langweilig! 🥱", "Zu teuer! 😩"]
+
+Frage: Hey, das ist großartig! Wie alt wird dein bester Freund denn? 🎉
+Schnellantworten: ["20", "30", "40", "50", "60"]
 `,
       prompt:
         "Erstelle Schnellantworten für folgende Nachricht: " + lastMessage,
@@ -173,6 +185,11 @@ Assistent: Alles klar, dann wollen wir deine Frau mal mit einem ganz besonderen 
 
 Nutzer: Ich suche ein Geschenk für meine Oma zum 70. Geburtstag.
 Assistent: Okay, und wie ist deine Oma so drauf? Typ Rocker-Oma oder eher die gemütliche Kaffeetante?
+
+---
+Wichtig: Jeder Text von dir endet mit einer konkreten, spezifischen Frage, um die Suche zu verfeinern. Es soll eine Information abgefragt werden, nicht mehrere. Frage **nicht** nach Farbe UND Hobbies, sondern ENTWEDER nach Farbe, ODER nach Hobbies!
+Negatives Beispiel: Hat deine Frau bestimmte Lieblingsfarben oder Hobbys, die ich bei der Geschenkauswahl berücksichtigen sollte?
+Besser: Welche Farben mag deine Frau am liebsten?
 `;
 
   aiState.update({
@@ -227,7 +244,7 @@ Assistent: Okay, und wie ist deine Oma so drauf? Typ Rocker-Oma oder eher die ge
             .number()
             .optional()
             .describe(
-              "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+              "Der maximale Preis, den das Produkt haben darf. Bspw 50.00 für 50€"
             ),
         }),
         generate: async function* ({ query, page, maxPrice }) {

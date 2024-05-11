@@ -47,7 +47,7 @@ export async function search_items(
       SortBy: "Relevance",
       ItemCount: 4,
       ItemPage: page,
-      MaxPrice: maxPrice,
+      MaxPrice: maxPrice * 100,
       Resources: [
         "BrowseNodeInfo.BrowseNodes",
         "BrowseNodeInfo.BrowseNodes.SalesRank",

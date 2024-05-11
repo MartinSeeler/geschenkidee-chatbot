@@ -47,6 +47,11 @@ export function Chat({ id, className }: ChatProps) {
     }
   }, [aiState.messages]);
 
+  useEffect(() => {
+    // reset quick answers when messages change
+    setQuickAnswers([]);
+  }, [messages]);
+
   const [_, setNewChatId] = useLocalStorage("newChatId", id);
 
   useEffect(() => {
@@ -57,7 +62,6 @@ export function Chat({ id, className }: ChatProps) {
     useScrollAnchor();
 
   const onSelectAnswer = async (answer: string) => {
-    setQuickAnswers([]);
     // Optimistically add user message UI
     setMessages((currentMessages) => [
       ...currentMessages,
