@@ -34,7 +34,7 @@
       "role": "assistant",
       "function_call": {
         "name": "searchAmazon",
-        "arguments": "{\"query\": \"schlauchschal merinowolle damen\", \"maxPrice\": 3000}"
+        "arguments": "{\"query\": \"schlauchschal merinowolle damen\", \"maxPrice\": 30}"
       },
       "weight": 1
     },
@@ -84,7 +84,7 @@
           },
           "maxPrice": {
             "type": "number",
-            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 50.00 für 50€"
           }
         },
         "required": ["query"]

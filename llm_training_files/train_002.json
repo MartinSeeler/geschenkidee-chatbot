@@ -34,7 +34,7 @@
       "role": "assistant",
       "function_call": {
         "name": "searchAmazon",
-        "arguments": "{\"query\": \"garteneinrichtung\", \"\"maxPrice\": 5000}"
+        "arguments": "{\"query\": \"garteneinrichtung\", \"\"maxPrice\": 50}"
       },
       "weight": 1
     },
@@ -87,7 +87,7 @@
       "role": "assistant",
       "function_call": {
         "name": "searchAmazon",
-        "arguments": "{\"query\": \"garten männer\", \"maxPrice\": 5000}"
+        "arguments": "{\"query\": \"garten männer\", \"maxPrice\": 50}"
       },
       "weight": 1
     },
@@ -115,7 +115,7 @@
           },
           "maxPrice": {
             "type": "number",
-            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 5000 für 50€"
+            "description": "Der maximale Preis, den das Produkt haben darf. Bspw 50.00 für 50€"
           }
         },
         "required": ["query"]
