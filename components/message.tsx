@@ -2,7 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import { GoogleIcon, IconGemini, IconUser } from "@/components/ui/icons";
+import { IconUser } from "@/components/ui/icons";
 import { cn } from "@/lib/utils";
 import { spinner } from "@/components/spinner";
 import { CodeBlock } from "@/components/ui/codeblock";

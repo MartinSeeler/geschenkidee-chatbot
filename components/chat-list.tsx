@@ -2,6 +2,7 @@ import { AI, UIState } from "@/lib/chat/actions";
 import { useAIState, useActions, useUIState } from "ai/rsc";
 import { useEffect, useState } from "react";
 import { SparklesIcon } from "./ui/icons";
+import { BotCard } from "./message";
 
 export interface ChatList {
   messages: UIState;
@@ -19,18 +20,20 @@ export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
       {messages.map((message) => (
         <div key={message.id}>{message.display}</div>
       ))}
-      <div className="flex flex-col sm:flex-row flex-wrap items-start gap-2">
-        {quickAnswers.map((suggestion) => (
-          <button
-            key={suggestion}
-            className="flex items-center gap-2 px-3 py-2 text-sm transition-colors bg-zinc-50 hover:bg-zinc-100 rounded-xl cursor-pointer"
-            onClick={() => onSelectAnswer(suggestion)}
-          >
-            <SparklesIcon />
-            <span className="text-nowrap">{suggestion}</span>
-          </button>
-        ))}
-      </div>
+      <BotCard showAvatar={false}>
+        <div className="flex flex-wrap items-start gap-2 -mt-2">
+          {quickAnswers.map((suggestion) => (
+            <button
+              key={suggestion}
+              className="flex items-center gap-2 px-3 py-2 text-sm transition-colors bg-zinc-50 hover:bg-zinc-100 rounded-xl cursor-pointer"
+              onClick={() => onSelectAnswer(suggestion)}
+            >
+              <SparklesIcon />
+              <span className="text-nowrap">{suggestion}</span>
+            </button>
+          ))}
+        </div>
+      </BotCard>
     </div>
   );
 }
