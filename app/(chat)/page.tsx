@@ -2,6 +2,8 @@ import { nanoid } from "@/lib/utils";
 import { Chat } from "@/components/chat";
 import { AI } from "@/lib/chat/actions";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   //   title: "GeschenkIdee.io",
 };
