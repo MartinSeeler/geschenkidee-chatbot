@@ -33,7 +33,7 @@ import {
 import { ReactNode } from "react";
 import { SearchResultItem } from "paapi5-typescript-sdk";
 
-const quickAnsersModel = "gpt-3.5-turbo";
+const quickAnswersModel = "gpt-3.5-turbo";
 // const chatModel = "ft:gpt-3.5-turbo-0125:martin-seeler::9NG2I8g6"; // :ckpt-step-68
 const chatModel = "gpt-3.5-turbo"; // :ckpt-step-68
 
@@ -70,16 +70,20 @@ Abmessungen: ${Object.values(item.ItemInfo?.ProductInfo?.ItemDimensions ?? {})
 `;
 };
 
-export async function generateQuickAnswers(lastMessage: string): Promise<{
+export type QuickAnswersResponse = {
   quickAnswers: string[];
-}> {
+};
+
+export async function generateQuickAnswers(
+  lastMessage: string
+): Promise<{ object: QuickAnswersResponse }> {
   "use server";
 
   const stream = createStreamableValue();
 
   (async () => {
     const { partialObjectStream } = await streamObject({
-      model: openai(quickAnsersModel),
+      model: openai(quickAnswersModel),
       system: `Du bist Experte im Erstellen von Schnellantworten. Die Antworten beziehen sich immer auf den Text.
 Jede Schnellantwort kann ein passendes Emoji am Ende enthalten. Der Text ist maximal 2 Wörter lang.
 
@@ -111,7 +115,7 @@ Frage: Wie wäre es mit einem 4er-Pack Basketball-Socken für Kinder in verschie
 Schnellantworten: ["Klasse! 👍", "Geht so ... 😐", "Langweilig! 🥱", "Zu teuer! 😩"]
 
 Frage: Hey, das ist großartig! Wie alt wird dein bester Freund denn? 🎉
-Schnellantworten: ["20", "30", "40", "50", "60"]
+
 `,
       prompt:
         "Erstelle Schnellantworten für folgende Nachricht: " + lastMessage,
@@ -129,6 +133,7 @@ Schnellantworten: ["20", "30", "40", "50", "60"]
     stream.done();
   })();
 
+  // @ts-ignore
   return { object: stream.value };
 }
 
@@ -190,6 +195,8 @@ Assistent: Okay, und wie ist deine Oma so drauf? Typ Rocker-Oma oder eher die ge
 Wichtig: Jeder Text von dir endet mit einer konkreten, spezifischen Frage, um die Suche zu verfeinern. Es soll eine Information abgefragt werden, nicht mehrere. Frage **nicht** nach Farbe UND Hobbies, sondern ENTWEDER nach Farbe, ODER nach Hobbies!
 Negatives Beispiel: Hat deine Frau bestimmte Lieblingsfarben oder Hobbys, die ich bei der Geschenkauswahl berücksichtigen sollte?
 Besser: Welche Farben mag deine Frau am liebsten?
+
+Du fragst NICHT, welches besser gefällt, sondrn immer eine konkrete Frage zur beschenkenden Person, die die Suche verfeinert.
 `;
 
   aiState.update({

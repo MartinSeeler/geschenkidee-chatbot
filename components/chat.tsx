@@ -6,7 +6,7 @@ import { ChatPanel } from "@/components/chat-panel";
 import { EmptyScreen } from "@/components/empty-screen";
 import { useLocalStorage } from "@/lib/hooks/use-local-storage";
 import { useEffect, useState } from "react";
-import { AI, UIState } from "@/lib/chat/actions";
+import { AI, QuickAnswersResponse, UIState } from "@/lib/chat/actions";
 import {
   readStreamableValue,
   useAIState,
@@ -35,7 +35,9 @@ export function Chat({ id, className }: ChatProps) {
       (async () => {
         const { object } = await generateQuickAnswers(lastMessage.content);
 
-        for await (const partialObject of readStreamableValue(object)) {
+        for await (const partialObject of readStreamableValue<QuickAnswersResponse>(
+          object
+        )) {
           // console.log(partialObject)
           if (partialObject) {
             setQuickAnswers(partialObject.quickAnswers);
