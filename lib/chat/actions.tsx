@@ -35,7 +35,8 @@ import { SearchResultItem } from "paapi5-typescript-sdk";
 
 const quickAnswersModel = "gpt-3.5-turbo";
 // const chatModel = "ft:gpt-3.5-turbo-0125:martin-seeler::9NG2I8g6"; // :ckpt-step-68
-const chatModel = "gpt-3.5-turbo"; // :ckpt-step-68
+// const chatModel = "gpt-3.5-turbo"; // :ckpt-step-68
+const chatModel = "gpt-4o"; // :ckpt-step-68
 
 export interface ClientMessage {
   id: string;
