@@ -45,7 +45,7 @@ export function AmazonSearchResults({
                       aria-hidden="true"
                       className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/45 to-transparent"
                     />
-                    <p className="relative w-full text-lg sm:text-base font-semibold text-white flex items-center justify-between gap-2">
+                    <p className="relative w-full text-base sm:text-sm font-semibold text-white flex items-center justify-between gap-2">
                       {item.Offers?.Listings[0].Price?.Savings ? (
                         <span className="font-bold text-sm sm:text-xs text-white bg-red-500 px-1.5 rounded-full">
                           -
@@ -82,7 +82,8 @@ export function AmazonSearchResults({
               target="_blank"
               className="flex gap-2 w-full"
             >
-              Alle {results.SearchResult?.TotalResultCount} Ergebnisse anzeigen
+              {results.SearchResult?.TotalResultCount} ähnliche Produkte
+              anzeigen
               <ArrowRightIcon className="w-3 h-3" />
             </Link>
           </Button>
