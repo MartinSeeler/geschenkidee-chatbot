@@ -392,11 +392,6 @@ export const AI = createAI<AIState, UIState>({
     // {
     //   id: nanoid(),
     //   role: "assistant",
-    //   display: <SpinnerMessage />,
-    // },
-    // {
-    //   id: nanoid(),
-    //   role: "assistant",
     //   display: (
     //     <BotMessage content="Hallo! Ich bin GeschenkIdee.io, dein persönlicher Geschenkberater. Wie kann ich dir helfen?" />
     //   ),
@@ -431,7 +426,7 @@ export const AI = createAI<AIState, UIState>({
     //           query="Blumen Muttertag"
     //         />
     //       </BotCard>
-    //       <BotMessage content="Wie wäre es mit ein paar schönen Blumen für deine Frau zum Muttertag?" />
+    //       {/* <BotMessage content="Wie wäre es mit ein paar schönen Blumen für deine Frau zum Muttertag?" /> */}
     //     </>
     //   ),
     // },
