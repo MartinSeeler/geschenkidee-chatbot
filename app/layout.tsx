@@ -4,9 +4,8 @@ import { Providers } from "@/components/providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "GeschenkIdee.io",
-  description:
-    "Keine Ahnung was du schenken sollst? GeschenkIdee.io ist dein schneller und kostenloser Helfer!",
+  title: "GeschenkIdee.io | Dein KI-basierter Geschenke-Assistent",
+  description: "Finde sofort die perfekte Geschenkidee für deine Liebsten!",
 };
 
 export default function RootLayout({
