@@ -12,14 +12,8 @@ export function FooterText({ className, ...props }: React.ComponentProps<"p">) {
       )}
       {...props}
     >
-      Ein Projekt von{" "}
-      <ExternalLink href="https://martinseeler.de">Martin Seeler</ExternalLink>,
-      gebaut mit <ExternalLink href="https://nextjs.org">Next.js</ExternalLink>{" "}
-      und{" "}
-      <ExternalLink href="https://github.com/vercel/ai">
-        Vercel AI SDK
-      </ExternalLink>
-      .
+      Ein KI-Projekt von{" "}
+      <ExternalLink href="https://martinseeler.de">Martin Seeler</ExternalLink>.
     </p>
   );
 }
