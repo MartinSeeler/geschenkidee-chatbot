@@ -16,11 +16,20 @@ export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
   }
 
   return (
-    <div className="relative mx-auto max-w-2xl grid auto-rows-max gap-8 px-4">
+    <div className="relative mx-auto max-w-2xl grid auto-rows-max gap-6 px-4">
       {messages.map((message) => (
         <div key={message.id}>{message.display}</div>
       ))}
       <BotCard showAvatar={false}>
+        {quickAnswers && quickAnswers.length > 0 && (
+          <div className="flex">
+            <div className="flex-grow">
+              <p className="text-xs text-zinc-600 pl-3">
+                Hier sind einige Vorschläge
+              </p>
+            </div>
+          </div>
+        )}
         <div className="flex flex-wrap items-start gap-2 -mt-2">
           {quickAnswers.map((suggestion) => (
             <button

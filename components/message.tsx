@@ -1,8 +1,5 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
-
-import { IconUser } from "@/components/ui/icons";
 import { cn } from "@/lib/utils";
 import { spinner } from "@/components/spinner";
 import { CodeBlock } from "@/components/ui/codeblock";
@@ -16,11 +13,8 @@ import { useStreamableText } from "@/lib/hooks/use-streamable-text";
 
 export function UserMessage({ children }: { children: React.ReactNode }) {
   return (
-    <div className="group relative flex items-start md:-ml-12">
-      <div className="bg-background flex size-[25px] shrink-0 select-none items-center justify-center rounded-lg border shadow-sm">
-        <IconUser />
-      </div>
-      <div className="ml-4 flex-1 space-y-2 overflow-hidden pl-2">
+    <div className="flex justify-end place-items-end">
+      <div className="space-y-2 bg-amber-100 rounded-xl px-4 py-2 overflow-hidden max-w-md sm:max-w-lg">
         {children}
       </div>
     </div>
@@ -37,15 +31,15 @@ export function BotMessage({
   const text = useStreamableText(content);
 
   return (
-    <div className={cn("group relative flex items-start md:-ml-12", className)}>
-      <div className="bg-background flex size-[25px] shrink-0 select-none items-center justify-center rounded-lg border shadow-sm">
+    <div className={cn("group flex items-start", className)}>
+      {/* <div className="bg-background flex size-[25px] shrink-0 select-none items-center justify-center rounded-lg border shadow-sm">
         <img
           className="size-6"
           src="/img/geschenkidee-bot.png"
           alt="geschenkidee logo"
         />
-      </div>
-      <div className="ml-4 flex-1 space-y-2 overflow-hidden pl-2">
+      </div> */}
+      <div className="space-y-2 overflow-hidden bg-zinc-50 rounded-xl px-4 py-2 max-w-md sm:max-w-lg">
         <MemoizedReactMarkdown
           className="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0"
           remarkPlugins={[remarkGfm, remarkMath]}
@@ -81,23 +75,7 @@ export function BotCard({
   children: React.ReactNode;
   showAvatar?: boolean;
 }) {
-  return (
-    <div className="group relative flex items-start md:-ml-12">
-      <div
-        className={cn(
-          "bg-background flex size-[25px] shrink-0 select-none items-center justify-center rounded-lg border shadow-sm",
-          !showAvatar && "invisible"
-        )}
-      >
-        <img
-          className="size-6"
-          src="/img/geschenkidee-bot.png"
-          alt="geschenkidee logo"
-        />
-      </div>
-      <div className="ml-4 flex-1 pl-2">{children}</div>
-    </div>
-  );
+  return children;
 }
 
 export function SystemMessage({ children }: { children: React.ReactNode }) {
@@ -114,15 +92,8 @@ export function SystemMessage({ children }: { children: React.ReactNode }) {
 
 export function SpinnerMessage() {
   return (
-    <div className="group relative flex items-start md:-ml-12">
-      <div className="bg-background flex size-[25px] shrink-0 select-none items-center justify-center rounded-lg border shadow-sm">
-        <img
-          className="size-6"
-          src="/img/geschenkidee-bot.png"
-          alt="geschenkidee logo"
-        />
-      </div>
-      <div className="ml-4 h-[24px] flex flex-row items-center flex-1 space-y-2 overflow-hidden px-1">
+    <div className="group flex items-start">
+      <div className="h-[24px] flex flex-row items-center flex-1 space-y-2 overflow-hidden px-1">
         {spinner}
       </div>
     </div>
