@@ -35,8 +35,8 @@ import { SearchResultItem } from "paapi5-typescript-sdk";
 
 const quickAnswersModel = "gpt-3.5-turbo";
 // const chatModel = "ft:gpt-3.5-turbo-0125:martin-seeler::9NG2I8g6"; // :ckpt-step-68
-// const chatModel = "gpt-3.5-turbo"; // :ckpt-step-68
-const chatModel = "gpt-4o"; // :ckpt-step-68
+const chatModel = "gpt-3.5-turbo"; // :ckpt-step-68
+// const chatModel = "gpt-4o"; // :ckpt-step-68
 
 export interface ClientMessage {
   id: string;
@@ -86,11 +86,13 @@ export async function generateQuickAnswers(
     const { partialObjectStream } = await streamObject({
       model: openai(quickAnswersModel),
       system: `Du bist Experte im Erstellen von Schnellantworten. Die Antworten beziehen sich immer auf den Text.
-Jede Schnellantwort kann ein passendes Emoji am Ende enthalten. Der Text ist maximal 2 Wörter lang.
+
+Wichtig ist, dass die Schnellantworten eine breite Auswahl an verschiedenen Optionen bieten, und nicht alle das gleiche bedeuten.
+Also von Gefällt mir gut bis Gefällt mir nicht so gut, oder von Ja bis Nein usw. Nicht mehrere Schnellantworten, die positiv sind.
 
 Beispiel:
 Frage: Hallo! Das ist schön, dass du nach einem Geschenk für deine Mama suchst. 😊 Um dir eine passende Geschenkidee vorzuschlagen, könntest du mir ein paar Informationen über deine Mama geben? Hat sie besondere Hobbys oder Interessen? Gibt es etwas, das sie besonders gerne mag oder schon lange haben wollte? Jede kleine Info hilft, um das perfekte Geschenk zu finden! 🎁✨
-Schnellantworten: ["Hobby-Bäckerin 👩‍🍳", "Naschkatze 🍫", "Serien-Junki 📺", "Blumenliebhaberin 🌸"]
+Schnellantworten: ["Hobby-Bäckerin", "Naschkatze", "Serien-Junki", "Blumenliebhaberin"]
 
 Frage: Eine Hochzeit ist immer ein besonderer Anlass! Hast du schon eine Idee, was du dem glücklichen Paar schenken möchtest, oder brauchst du noch Vorschläge? 🎁💍🥂
 Schnellantworten: ["Etwas traditionelles", "Etwas kreatives", "Etwas preiswertes", "Ich habe keine Idee"]
@@ -104,19 +106,19 @@ Welcher Vorschlag gefällt dir am besten oder soll ich noch nach etwas anderem s
 Schnellantworten: ["Charlotte","Farbtraum","Infinity Rosen","Etwas anderes"]
 
 Frage: Ich bin GeschenkIdee.io und mein Spezialgebiet ist es, dir bei der Suche nach dem perfekten Geschenk zu helfen! Egal ob Geburtstage, Jubiläen, Feiertage oder einfach nur so - ich bin hier, um kreative und individuelle Geschenkideen für deine Liebsten zu finden. Sag mir einfach, für wen du ein Geschenk suchst und lass uns loslegen! 🎉
-Schnellantworten: ["Meine Frau 👩‍❤️‍👨", "Mein bester Freund 👬", "Meine Oma 👵", "Mein Chef 👨‍💼"]
+Schnellantworten: ["Meine Frau", "Mein bester Freund", "Meine Oma", "Mein Chef"]
 
 Frage: Das klingt nach einer schönen Geste! 😊 Hat deine Frau bestimmte Lieblingsfarben, die ich bei der Geschenkauswahl berücksichtigen sollte?
-Schnellantworten: ["Rot 🟥", "Blau 🟦", "Grün 🟩", "Gelb 🟨", "Rosa 🩷"]
+Schnellantworten: ["Rot", "Blau", "Grün", "Gelb", "Rosa"]
 
 Frage: Diese Karte ist perfekt, um deiner Frau zum Muttertag eine besondere Freude zu machen. Was hältst du von dieser Idee?
-Schnellantworten: ["Tolle Idee 👍", "Nicht so meins 👎", "Bin mir unsicher 🤔"]
+Schnellantworten: ["Tolle Idee", "Nicht so meins", "Bin mir unsicher"]
 
 Frage: Wie wäre es mit einem 4er-Pack Basketball-Socken für Kinder in verschiedenen trendigen Farben? Sie sind atmungsaktiv, bequem und perfekt für sportliche Aktivitäten. Was denkst du darüber?
-Schnellantworten: ["Klasse! 👍", "Geht so ... 😐", "Langweilig! 🥱", "Zu teuer! 😩"]
+Schnellantworten: ["Gefällt mir super!", "Geht so ...", "Finde ich langweilig!", "Gibt's das auch güpünstiger?"]
 
 Frage: Hey, das ist großartig! Wie alt wird dein bester Freund denn? 🎉
-
+Schnellantworten: ["20", "30", "40", "50", "60"]
 `,
       prompt:
         "Erstelle Schnellantworten für folgende Nachricht: " + lastMessage,
