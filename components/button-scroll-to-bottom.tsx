@@ -19,7 +19,7 @@ export function ButtonScrollToBottom({
 }: ButtonScrollToBottomProps) {
   return (
     <Button
-      variant="outline"
+      variant="noShadow"
       size="icon"
       className={cn(
         "absolute right-4 -top-10 z-10 bg-background transition-opacity duration-300 sm:right-8 md:top-2",
