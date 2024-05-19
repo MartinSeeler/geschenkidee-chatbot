@@ -3,6 +3,8 @@ import { useAIState, useActions, useUIState } from "ai/rsc";
 import { useEffect, useState } from "react";
 import { SparklesIcon } from "./ui/icons";
 import { BotCard } from "./message";
+import { Button } from "./ui/button";
+import { Sparkles, WandSparkles } from "lucide-react";
 
 export interface ChatList {
   messages: UIState;
@@ -16,30 +18,28 @@ export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
   }
 
   return (
-    <div className="relative mx-auto max-w-2xl grid auto-rows-max gap-6 px-4">
+    <div className="relative mx-auto max-w-2xl grid auto-rows-max gap-8 px-4">
       {messages.map((message) => (
         <div key={message.id}>{message.display}</div>
       ))}
       <BotCard showAvatar={false}>
-        {quickAnswers && quickAnswers.length > 0 && (
-          <div className="flex">
-            <div className="flex-grow">
-              <p className="text-xs text-zinc-600 pl-3">
-                Hier sind einige Vorschläge
-              </p>
-            </div>
-          </div>
-        )}
         <div className="flex flex-wrap items-start gap-2 -mt-2">
           {quickAnswers.map((suggestion) => (
-            <button
+            <Button
               key={suggestion}
-              className="flex items-center gap-2 px-3 py-2 text-sm transition-colors bg-zinc-50 hover:bg-zinc-100 rounded-xl cursor-pointer"
+              variant={"default"}
+              color="red"
+              className="flex gap-2 items-center"
               onClick={() => onSelectAnswer(suggestion)}
             >
-              <SparklesIcon />
+              <Sparkles
+                size={18}
+                strokeWidth={2}
+                absoluteStrokeWidth
+                color="#a88dff"
+              />
               <span className="text-nowrap">{suggestion}</span>
-            </button>
+            </Button>
           ))}
         </div>
       </BotCard>

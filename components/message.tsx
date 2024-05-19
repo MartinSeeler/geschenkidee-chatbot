@@ -14,7 +14,7 @@ import { useStreamableText } from "@/lib/hooks/use-streamable-text";
 export function UserMessage({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex justify-end place-items-end">
-      <div className="space-y-2 bg-amber-100 rounded-xl px-4 py-2 overflow-hidden max-w-md sm:max-w-lg">
+      <div className="space-y-2 overflow-hidden py-2 px-4 max-w-md sm:max-w-lg rounded-base shadow-base border-2 border-black bg-mint-100 text-black">
         {children}
       </div>
     </div>
@@ -39,9 +39,9 @@ export function BotMessage({
           alt="geschenkidee logo"
         />
       </div> */}
-      <div className="space-y-2 overflow-hidden bg-zinc-50 rounded-xl px-4 py-2 max-w-md sm:max-w-lg">
+      <div className="space-y-2 overflow-hidden px-4 py-2 max-w-md sm:max-w-lg rounded-base shadow-base border-2 border-black bg-purple-100 text-white">
         <MemoizedReactMarkdown
-          className="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0"
+          className="prose break-words prose-p:leading-relaxed prose-pre:p-0"
           remarkPlugins={[remarkGfm, remarkMath]}
           components={{
             p({ children }) {

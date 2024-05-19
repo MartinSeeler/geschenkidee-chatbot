@@ -10,6 +10,9 @@ const config = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      serif: ['"Freeman"', "sans-serif"],
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -19,9 +22,30 @@ const config = {
     },
     extend: {
       colors: {
-        bg: "#fff4e0",
-        main: "#FD9745",
-        mainAccent: "#fc7303", // not needed for shadcn
+        bg: "#dcf7e7",
+        main: "#6e61ff",
+        mainAccent: "#6e61ff", // not needed for shadcn
+        mint: {
+          50: "#dff9f0",
+          100: "#cef6e9",
+          800: "#b0f0da",
+        },
+        mustard: {
+          50: "#fdffd0",
+          100: "#f4f8ac",
+          800: "#f1f78e",
+        },
+        peach: {
+          50: "#ffeadd",
+          100: "#ffd6bc",
+          800: "#ffbc90",
+        },
+        purple: {
+          50: "#efe9fe",
+          100: "#d5c8fb",
+          700: "#b9a4ff",
+          800: "#a88dff",
+        },
       },
       borderRadius: {
         base: "10px",
@@ -39,7 +63,11 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
+    require("tailwindcss-bg-patterns"),
+  ],
 } satisfies Config;
 
 export default config;
