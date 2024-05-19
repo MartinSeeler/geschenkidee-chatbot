@@ -13,23 +13,13 @@ import { de } from "date-fns/locale";
 
 import { openai } from "@ai-sdk/openai";
 
-import {
-  BotCard,
-  BotMessage,
-  UserMessage,
-  SpinnerMessage,
-  SystemMessage,
-} from "@/components/message";
+import { BotCard, BotMessage, SpinnerMessage } from "@/components/message";
 
 import { z } from "zod";
 import { AmazonSearchResultsSkeleton } from "@/components/chat/amazon-search-results-skeleton";
 import { AmazonSearchResults } from "@/components/chat/amazon-search-results";
 import { nanoid } from "@/lib/utils";
-import {
-  FakeResponse,
-  get_item_by_asin,
-  search_items,
-} from "@/lib/amazon/actions";
+import { search_items } from "@/lib/amazon/actions";
 import { ReactNode } from "react";
 import { SearchResultItem } from "paapi5-typescript-sdk";
 
@@ -37,6 +27,8 @@ const quickAnswersModel = "gpt-3.5-turbo";
 // const chatModel = "ft:gpt-3.5-turbo-0125:martin-seeler::9NG2I8g6"; // :ckpt-step-68
 const chatModel = "gpt-3.5-turbo"; // :ckpt-step-68
 // const chatModel = "gpt-4o"; // :ckpt-step-68
+
+export const dynamic = "force-dynamic";
 
 export interface ClientMessage {
   id: string;

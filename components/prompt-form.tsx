@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/tooltip";
 import { useEnterSubmit } from "@/lib/hooks/use-enter-submit";
 import { nanoid } from "nanoid";
+import { CornerDownLeft, SendHorizonal } from "lucide-react";
 
 export function PromptForm({
   input,
@@ -64,7 +65,7 @@ export function PromptForm({
         setMessages((currentMessages) => [...currentMessages, responseMessage]);
       }}
     >
-      <div className="relative flex max-h-60 w-full grow overflow-hidden bg-zinc-100 px-4 sm:rounded-full sm:px-4">
+      <div className="relative flex max-h-60 w-full grow overflow-hidden bg-white border-2 border-black px-4 sm:rounded-lg sm:px-4">
         <Textarea
           ref={inputRef}
           tabIndex={0}
@@ -87,9 +88,9 @@ export function PromptForm({
                 type="submit"
                 size="icon"
                 disabled={input === ""}
-                className="bg-transparent shadow-none text-zinc-950 rounded-full hover:bg-zinc-200"
+                className=""
               >
-                <IconArrowElbow />
+                <CornerDownLeft strokeWidth={2} absoluteStrokeWidth />
                 <span className="sr-only">
                   Schreibe eine Nachricht an den Geschenke-Bot.
                 </span>
