@@ -43,7 +43,7 @@ const features: Feature[] = [
   },
   {
     title: "Einfach zu bedienen",
-    text: "Keine komplizierten Filter oder endlose Suchergebnisse. Rede einfach mit dem KI-Assistenten und erhalte passende Vorschläge.",
+    text: "Keine komplizierten Filter oder endlose Suchergebnisse. Schreib einfach mit dem KI-Assistenten und erhalte passende Vorschläge.",
     icon: BotMessageSquare,
   },
   {
@@ -110,7 +110,7 @@ export default function Features() {
             className="h-12 text-base font-heading md:text-lg lg:h-14 lg:text-xl w-full md:w-auto"
             asChild
           >
-            <Link href="/chat">Loschatten und überraschen lassen</Link>
+            <Link href="/chat">Jetzt chatten und überraschen lassen</Link>
           </Button>
         </div>
       </section>
