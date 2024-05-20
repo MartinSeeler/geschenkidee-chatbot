@@ -33,7 +33,7 @@ export default function RootLayout({
           sizes="16x16"
           href="/favicon-16x16.png?v=1"
         />
-        <link rel="manifest" href="/site.webmanifest?v=1" />
+        <link rel="manifest" href="/site.webmanifest?v=2" />
         <link
           rel="mask-icon"
           href="/safari-pinned-tab.svg?v=1"
@@ -42,8 +42,8 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico?v=1" />
         <meta name="apple-mobile-web-app-title" content="GeschenkIdee.io" />
         <meta name="application-name" content="GeschenkIdee.io" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#fff4e0"></meta>
+        <meta name="msapplication-TileColor" content="#6e61ff" />
+        <meta name="theme-color" content="#f1f6f1"></meta>
       </head>
       <body>
         <Providers>
