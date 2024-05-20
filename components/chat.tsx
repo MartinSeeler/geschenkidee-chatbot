@@ -47,7 +47,7 @@ export function Chat({ id, className }: ChatProps) {
     } else {
       setQuickAnswers([]);
     }
-  }, [aiState.messages]);
+  }, [generateQuickAnswers, aiState.messages]);
 
   useEffect(() => {
     // reset quick answers when messages change
