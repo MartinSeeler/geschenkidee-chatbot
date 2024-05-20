@@ -6,3 +6,8 @@
   font-family: "Freeman";
   src: url("/fonts/Freeman-Regular.tff") format("truetype");
 }
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}

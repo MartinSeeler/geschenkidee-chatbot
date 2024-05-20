@@ -71,7 +71,7 @@ export function PromptForm({
           tabIndex={0}
           onKeyDown={onKeyDown}
           placeholder="Schreibe eine Nachricht."
-          className="min-h-[60px] w-full bg-transparent placeholder:text-zinc-400 resize-none px-4 py-[1.3rem] focus-within:outline-none sm:text-sm"
+          className="min-h-[60px] w-full bg-transparent placeholder:text-gray-800/50 resize-none pr-4 py-[1.3rem] focus-within:outline-none sm:text-sm"
           autoFocus
           spellCheck={false}
           autoComplete="off"
@@ -81,25 +81,18 @@ export function PromptForm({
           value={input}
           onChange={(e: any) => setInput(e.target.value)}
         />
-        <div className="pr-4 items-center flex">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                type="submit"
-                size="icon"
-                disabled={input === ""}
-                className=""
-              >
-                <CornerDownLeft strokeWidth={2} absoluteStrokeWidth />
-                <span className="sr-only">
-                  Schreibe eine Nachricht an den Geschenke-Bot.
-                </span>
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent>
+        <div className="items-center flex">
+          <Button
+            type="submit"
+            size="icon"
+            disabled={input === ""}
+            className=""
+          >
+            <CornerDownLeft strokeWidth={2} absoluteStrokeWidth />
+            <span className="sr-only">
               Schreibe eine Nachricht an den Geschenke-Bot.
-            </TooltipContent>
-          </Tooltip>
+            </span>
+          </Button>
         </div>
       </div>
     </form>

@@ -58,7 +58,7 @@ export default function Features() {
     <div>
       <div>
         <Marquee
-          className="border-y-2 border-y-black bg-white py-3 font-base sm:py-5"
+          className="border-y-2 border-y-black bg-white py-3 font-space sm:py-5"
           direction="left"
           autoFill
           pauseOnHover
@@ -78,10 +78,10 @@ export default function Features() {
           })}
         </Marquee>
       </div>
-      <section className="bg-mint-50 py-20 font-base lg:py-[100px]">
+      <section className="bg-main py-20 font-base lg:py-[100px]">
         <header className="mb-14 lg:mb-20 text-pretty">
-          <h2 className="px-5 text-center text-2xl font-freeman font-heading md:text-3xl lg:text-4xl">
-            Dein persönlicher KI-Berater für Geschenkideen
+          <h2 className="px-5 text-center text-white text-3xl font-space font-heading md:text-3xl lg:text-4xl">
+            Dein persönlicher KI-Berater für ideale Geschenkideen
           </h2>
         </header>
 
@@ -92,33 +92,31 @@ export default function Features() {
                 className="relative flex flex-col gap-3 rounded-base border-2 border-black bg-white p-5 shadow-base"
                 key={i}
               >
-                <div className="text-white absolute top-0 right-0 -mt-4 mr-4 rounded-xl bg-purple-800 p-3 border-2 border-black">
-                  <feature.icon size={40} strokeWidth={4} absoluteStrokeWidth />
+                <div className="text-white text-xl md:text-2xl absolute top-0 right-0 -mt-4 mr-4 rounded-xl bg-mainAccent p-3 border-2 border-black">
+                  <feature.icon className="size-7 md:size-8" />
                 </div>
-                <h3 className="mt-4 text-xl font-freeman font-heading">
+                <h3 className="text-xl font-space font-heading pr-24">
                   {feature.title}
                 </h3>
-                <p>{feature.text}</p>
+                <p className="text-base font-normal">{feature.text}</p>
               </div>
             );
           })}
         </div>
-        <div className="w-full flex mt-12">
+        <div className="mx-auto w-container max-w-full flex mt-14 lg:mt-20 text-center justify-center px-5">
           <Button
             size="lg"
             color="purple"
-            className="h-12 text-base font-heading md:text-lg lg:h-14 lg:text-xl mx-auto"
+            className="h-12 text-base font-heading md:text-lg lg:h-14 lg:text-xl w-full md:w-auto"
             asChild
           >
-            <Link href="/chat">
-              Ausprobieren und erste Geschenkideen erhalten
-            </Link>
+            <Link href="/chat">Loschatten und überraschen lassen</Link>
           </Button>
         </div>
       </section>
       <div>
         <Marquee
-          className="border-y-2 border-y-black bg-white py-3 font-base sm:py-5"
+          className="border-y-2 border-y-black bg-white py-3 font-space sm:py-5"
           direction="left"
           autoFill
           pauseOnHover

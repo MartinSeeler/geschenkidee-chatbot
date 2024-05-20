@@ -10,9 +10,6 @@ const config = {
   ],
   prefix: "",
   theme: {
-    fontFamily: {
-      serif: ['"Freeman"', "sans-serif"],
-    },
     container: {
       center: true,
       padding: "2rem",
@@ -21,11 +18,15 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        space: ['"Space Grotesk"', "sans-serif"],
+      },
       colors: {
         bg: "#dcf7e7",
         main: "#6e61ff",
-        mainAccent: "#6e61ff", // not needed for shadcn
+        mainAccent: "#ff5710", // not needed for shadcn
         mint: {
+          10: "#f1f6f1",
           50: "#dff9f0",
           100: "#cef6e9",
           800: "#b0f0da",

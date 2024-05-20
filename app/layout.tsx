@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className="bg-peach-50">
+    <html lang="de" className="bg-mint-10">
       <head>
         <link
           rel="apple-touch-icon"

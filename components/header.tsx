@@ -5,15 +5,15 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="inset-0 flex min-h-[80dvh] w-full flex-col items-center justify-center pattern-cross pattern-bg-peach-50 pattern-peach-100 pattern-size-8 pattern-opacity-100">
-      <div className="mx-auto w-container max-w-2xl px-5 py-[110px] text-center lg:py-[150px]0">
-        <h1 className="font-freeman text-4xl font-heading md:text-5xl lg:text-6xl text-pretty">
+    <header className="inset-0 flex min-h-[80dvh] w-full flex-col items-center justify-center">
+      <div className="mx-auto w-container max-w-3xl px-5 py-[110px] text-center lg:py-[150px]0">
+        <h1 className="font-space text-5xl font-heading md:text-5xl lg:text-6xl text-pretty">
           Finde das perfekte Geschenk in Sekunden
         </h1>
         <p className="my-12 mt-8 text-lg font-normal leading-relaxed md:text-xl lg:text-2xl lg:leading-relaxed">
           Schnell, personalisiert und ohne Anmeldung.
           <br />
-          Mit deinem persönlichen KI-Berater findest du das perfekte Geschenk
+          Mit deinem persönlichen KI-Berater findest du passende Geschenkideen
           für jeden Anlass.
         </p>
 
