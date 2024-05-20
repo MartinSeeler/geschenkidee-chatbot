@@ -6,6 +6,15 @@ const nextConfig = {
     locales: ["de"],
     defaultLocale: "de",
   },
+  async redirects() {
+    return [
+      {
+        source: "/produkte/(.*)",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
