@@ -31,7 +31,7 @@ export function AmazonSearchResults({
           return (
             <Button
               key={`${item.ASIN}-preview-grid-${query}`}
-              color="neutral"
+              theme="neutral"
               size="none"
               asChild
             >
@@ -71,7 +71,7 @@ export function AmazonSearchResults({
       {results.SearchResult?.TotalResultCount >
         results.SearchResult?.Items?.length && (
         <div className="flex content-center">
-          <Button color="purple" asChild>
+          <Button theme="purple" asChild>
             <Link
               href={results.SearchResult?.SearchURL}
               target="_blank"

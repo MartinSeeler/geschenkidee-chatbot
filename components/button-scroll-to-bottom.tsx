@@ -21,7 +21,7 @@ export function ButtonScrollToBottom({
     <Button
       //   variant="neutral"
       size="icon"
-      color="mint"
+      theme="mint"
       className={cn(
         "absolute right-4 -top-10 z-10 transition-[opacity shadow] sm:right-8 md:top-2",
         isAtBottom ? "opacity-0" : "opacity-100",

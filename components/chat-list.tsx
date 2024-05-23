@@ -22,7 +22,7 @@ export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
         {quickAnswers.map((suggestion) => (
           <Button
             key={suggestion}
-            color="mint"
+            theme="mint"
             className="flex gap-2 items-center font-base"
             onClick={() => onSelectAnswer(suggestion)}
           >

@@ -106,7 +106,7 @@ export default function Features() {
         <div className="mx-auto w-container max-w-full flex mt-14 lg:mt-20 text-center justify-center px-5">
           <Button
             size="lg"
-            color="mint"
+            theme="mint"
             className="h-12 text-base font-heading md:text-lg lg:h-14 lg:text-xl w-full md:w-auto"
             asChild
           >

@@ -63,7 +63,7 @@ export function ChatPanel({
             exampleMessages.map((example, index) => (
               <Button
                 key={example.heading}
-                color="mint"
+                theme="mint"
                 size="none"
                 onClick={async () => {
                   setMessages((currentMessages) => [
