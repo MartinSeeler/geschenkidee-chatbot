@@ -3,7 +3,7 @@ import * as React from "react";
 import { PromptForm } from "@/components/prompt-form";
 import { ButtonScrollToBottom } from "@/components/button-scroll-to-bottom";
 import { FooterText } from "@/components/footer";
-import { useAIState, useActions, useUIState } from "ai/rsc";
+import { useActions, useUIState } from "ai/rsc";
 import type { AI } from "@/lib/chat/actions";
 import { nanoid } from "nanoid";
 import { UserMessage } from "@/components/message";
@@ -39,7 +39,7 @@ export function ChatPanel({
   ];
 
   return (
-    <div className="fixed inset-x-0 bg-peach-50/90 bottom-0 w-full duration-300 ease-in-out peer-[[data-state=open]]:group-[]:lg:pl-[250px] peer-[[data-state=open]]:group-[]:xl:pl-[300px] dark:from-10%">
+    <div className="fixed inset-x-0 bg-mint-10 bottom-0 w-full duration-300 ease-in-out peer-[[data-state=open]]:group-[]:lg:pl-[250px] peer-[[data-state=open]]:group-[]:xl:pl-[300px] dark:from-10%">
       <ButtonScrollToBottom
         isAtBottom={isAtBottom}
         scrollToBottom={scrollToBottom}

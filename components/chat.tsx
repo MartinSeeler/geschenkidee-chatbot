@@ -6,7 +6,7 @@ import { ChatPanel } from "@/components/chat-panel";
 import { EmptyScreen } from "@/components/empty-screen";
 import { useLocalStorage } from "@/lib/hooks/use-local-storage";
 import { useEffect, useState } from "react";
-import { AI, QuickAnswersResponse, UIState } from "@/lib/chat/actions";
+import { AI, QuickAnswersResponse } from "@/lib/chat/actions";
 import {
   readStreamableValue,
   useAIState,
@@ -14,7 +14,6 @@ import {
   useUIState,
 } from "ai/rsc";
 import { useScrollAnchor } from "@/lib/hooks/use-scroll-anchor";
-import { set } from "date-fns";
 import { UserMessage } from "./message";
 
 export interface ChatProps extends React.ComponentProps<"div"> {

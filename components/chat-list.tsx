@@ -1,10 +1,6 @@
-import { AI, UIState } from "@/lib/chat/actions";
-import { useAIState, useActions, useUIState } from "ai/rsc";
-import { useEffect, useState } from "react";
-import { SparklesIcon } from "./ui/icons";
-import { BotCard } from "./message";
+import { UIState } from "@/lib/chat/actions";
 import { Button } from "./ui/button";
-import { Sparkles, WandSparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 export interface ChatList {
   messages: UIState;
@@ -22,27 +18,24 @@ export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
       {messages.map((message) => (
         <div key={message.id}>{message.display}</div>
       ))}
-      <BotCard showAvatar={false}>
-        <div className="flex flex-wrap items-start gap-2 -mt-2">
-          {quickAnswers.map((suggestion) => (
-            <Button
-              key={suggestion}
-              variant={"default"}
-              color="red"
-              className="flex gap-2 items-center"
-              onClick={() => onSelectAnswer(suggestion)}
-            >
-              <Sparkles
-                size={18}
-                strokeWidth={2}
-                absoluteStrokeWidth
-                color="#a88dff"
-              />
-              <span className="text-nowrap">{suggestion}</span>
-            </Button>
-          ))}
-        </div>
-      </BotCard>
+      <div className="flex flex-wrap items-start gap-4 -mt-2">
+        {quickAnswers.map((suggestion) => (
+          <Button
+            key={suggestion}
+            variant="default"
+            className="flex gap-2 items-center font-sans"
+            onClick={() => onSelectAnswer(suggestion)}
+          >
+            <Sparkles
+              size={18}
+              strokeWidth={2}
+              absoluteStrokeWidth
+              color="#a88dff"
+            />
+            <span className="text-nowrap">{suggestion}</span>
+          </Button>
+        ))}
+      </div>
     </div>
   );
 }

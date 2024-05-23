@@ -1,90 +1,82 @@
 "use client";
 
-import { SearchItemsResponse } from "paapi5-typescript-sdk";
+import { SearchItemsResponse, SearchResultItem } from "paapi5-typescript-sdk";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
+import { ExternalLink, Percent } from "lucide-react";
 
 interface AmazonSearchResultsProps {
   query: string;
   results: SearchItemsResponse;
 }
 
+const getPrice = (item: SearchResultItem) => {
+  return item.Offers?.Listings[0].Price?.Amount.toFixed(2);
+};
+
+const getSavings = (item: SearchResultItem) => {
+  return item.Offers?.Listings[0].Price?.Savings?.Percentage.toFixed(0);
+};
+
 export function AmazonSearchResults({
   query,
   results,
 }: AmazonSearchResultsProps) {
   return (
-    <div className="grid gap-2 rounded-2xl border border-zinc-200 bg-white p-2 mb-8">
-      <div className="grid gap-2 sm:flex sm:flex-row justify-between border-b p-2">
-        <div>
-          <div className="text-xs text-zinc-600">Vorschau für</div>
-          <div className="font-medium capitalize">{query}</div>
-        </div>
-      </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-        {results.SearchResult?.Items?.map((item) => (
-          <Tooltip key={`${item.ASIN}-preview-grid-${query}`}>
-            <TooltipTrigger asChild>
-              <Link
-                className="flex group/item cursor-pointer flex-row items-start sm:items-center gap-2 rounded-xl hover:bg-zinc-50"
-                href={item.DetailPageURL}
-                target="_blank"
-              >
-                <div className="relative">
-                  <div className="relative w-full overflow-hidden rounded-lg aspect-square">
-                    <img
-                      src={item.Images?.Primary?.Large?.URL}
-                      alt={item.ItemInfo?.Title?.DisplayValue}
-                      className="object-cover object-center aspect-square w-full group-hover/item:scale-110 transition-all duration-300 ease-in-out"
-                    />
-                  </div>
-                  <div className="absolute inset-x-0 top-0 flex w-full aspect-square items-end justify-end overflow-hidden rounded-lg px-2 sm:px-1">
-                    <div
-                      aria-hidden="true"
-                      className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/45 to-transparent"
-                    />
-                    <p className="relative w-full text-base sm:text-sm font-semibold text-white flex items-center justify-between gap-2">
-                      {item.Offers?.Listings[0].Price?.Savings ? (
-                        <span className="font-bold text-sm sm:text-xs text-white bg-red-500 px-1.5 rounded-full">
-                          -
-                          {item.Offers.Listings[0].Price.Savings.Percentage.toFixed(
-                            0
-                          )}
-                          %
+    <div className="grid gap-8 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        {results.SearchResult?.Items?.map((item) => {
+          const price = getPrice(item);
+          const savings = getSavings(item);
+          return (
+            <Button
+              key={`${item.ASIN}-preview-grid-${query}`}
+              color="neutral"
+              size="none"
+              asChild
+            >
+              <Link href={item.DetailPageURL} target="_blank">
+                <div className="flex flex-col gap-1 h-full">
+                  <div className="relative">
+                    <div className="w-full flex flex-col border-b-2 border-black overflow-hidden rounded-none rounded-t-lg aspect-square">
+                      <img
+                        src={item.Images?.Primary?.Large?.URL}
+                        alt={item.ItemInfo?.Title?.DisplayValue}
+                        className="object-cover object-center aspect-square w-full max-w-full"
+                      />
+                    </div>
+                    {savings && (
+                      <div className="absolute flex items-center gap-0.5 top-0 right-0 -mt-3 -mr-3 rounded-xl bg-mainAccent py-0.5 px-1.5 border-2 border-black">
+                        <span className="text-xs font-bold text-white">
+                          -{savings}
                         </span>
-                      ) : (
-                        <span></span>
-                      )}
-                      <span>
-                        {item.Offers?.Listings[0].Price?.Amount.toFixed(2)}€
-                      </span>
+                        <Percent size={10} absoluteStrokeWidth color="white" />
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex-1 flex-grow px-2 pb-1 flex flex-col text-wrap text-sm overflow-hidden line-clamp-2">
+                    <p className="font-space font-heading line-clamp-2">
+                      von {item.ItemInfo?.ByLineInfo?.Brand?.DisplayValue}
                     </p>
+                    <p className="font-normal text-xs">{price}€</p>
                   </div>
                 </div>
               </Link>
-            </TooltipTrigger>
-            <TooltipContent>
-              <div className="flex max-w-sm">
-                {item.ItemInfo?.Title?.DisplayValue}
-              </div>
-            </TooltipContent>
-          </Tooltip>
-        ))}
+            </Button>
+          );
+        })}
       </div>
       {results.SearchResult?.TotalResultCount >
         results.SearchResult?.Items?.length && (
         <div className="flex content-center">
-          <Button variant="link" size="sm" asChild>
+          <Button color="purple" asChild>
             <Link
               href={results.SearchResult?.SearchURL}
               target="_blank"
-              className="flex gap-2 w-full"
+              className="flex gap-2 w-full font-heading"
             >
-              {results.SearchResult?.TotalResultCount} ähnliche Produkte
-              anzeigen
-              <ArrowRightIcon className="w-3 h-3" />
+              Noch mehr Produkte anzeigen
+              <ExternalLink size={16} absoluteStrokeWidth />
             </Link>
           </Button>
         </div>

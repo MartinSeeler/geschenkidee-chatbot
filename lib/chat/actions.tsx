@@ -13,13 +13,13 @@ import { de } from "date-fns/locale";
 
 import { openai } from "@ai-sdk/openai";
 
-import { BotCard, BotMessage, SpinnerMessage } from "@/components/message";
+import { BotMessage, SpinnerMessage, UserMessage } from "@/components/message";
 
 import { z } from "zod";
 import { AmazonSearchResultsSkeleton } from "@/components/chat/amazon-search-results-skeleton";
 import { AmazonSearchResults } from "@/components/chat/amazon-search-results";
 import { nanoid } from "@/lib/utils";
-import { search_items } from "@/lib/amazon/actions";
+import { FakeResponse, search_items } from "@/lib/amazon/actions";
 import { ReactNode } from "react";
 import { SearchResultItem } from "paapi5-typescript-sdk";
 
@@ -27,8 +27,6 @@ const quickAnswersModel = "gpt-3.5-turbo";
 // const chatModel = "ft:gpt-3.5-turbo-0125:martin-seeler::9NG2I8g6"; // :ckpt-step-68
 const chatModel = "gpt-3.5-turbo"; // :ckpt-step-68
 // const chatModel = "gpt-4o"; // :ckpt-step-68
-
-export const dynamic = "force-dynamic";
 
 export interface ClientMessage {
   id: string;
@@ -252,22 +250,16 @@ Du fragst NICHT, welches besser gefällt, sondrn immer eine konkrete Frage zur b
           } else {
             functionCalled = true;
           }
-          uiStream.update(
-            <BotCard>
-              <AmazonSearchResultsSkeleton query={query} />
-            </BotCard>
-          );
+          uiStream.update(<AmazonSearchResultsSkeleton query={query} />);
 
           const amazonResults = await search_items(query, page, maxPrice);
 
           uiStream.update(
             <>
-              <BotCard>
-                <AmazonSearchResults
-                  results={amazonResults} // .slice(0, 8)
-                  query={query}
-                />
-              </BotCard>
+              <AmazonSearchResults
+                results={amazonResults} // .slice(0, 8)
+                query={query}
+              />
               <SpinnerMessage />
             </>
           );
@@ -306,9 +298,7 @@ Du fragst NICHT, welches besser gefällt, sondrn immer eine konkrete Frage zur b
           const responseStream = createStreamableValue("");
           uiStream.update(
             <>
-              <BotCard>
-                <AmazonSearchResults results={amazonResults} query={query} />
-              </BotCard>
+              <AmazonSearchResults results={amazonResults} query={query} />
               <BotMessage content={responseStream.value} />
             </>
           );
@@ -330,12 +320,10 @@ Du fragst NICHT, welches besser gefällt, sondrn immer eine konkrete Frage zur b
                 responseStream.done();
                 uiStream.done(
                   <>
-                    <BotCard>
-                      <AmazonSearchResults
-                        results={amazonResults}
-                        query={query}
-                      />
-                    </BotCard>
+                    <AmazonSearchResults
+                      results={amazonResults}
+                      query={query}
+                    />
                     <BotMessage content={assistentContent} />
                   </>
                 );

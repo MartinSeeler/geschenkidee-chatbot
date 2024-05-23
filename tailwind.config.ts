@@ -68,6 +68,7 @@ const config = {
     require("tailwindcss-animate"),
     require("@tailwindcss/typography"),
     require("tailwindcss-bg-patterns"),
+    // require("@tailwindcss/aspect-ratio"),
   ],
 } satisfies Config;
 

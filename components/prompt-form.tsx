@@ -8,15 +8,9 @@ import { useActions, useUIState } from "ai/rsc";
 import { UserMessage } from "@/components/message";
 import { type AI } from "@/lib/chat/actions";
 import { Button } from "@/components/ui/button";
-import { IconArrowElbow } from "@/components/ui/icons";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import { useEnterSubmit } from "@/lib/hooks/use-enter-submit";
 import { nanoid } from "nanoid";
-import { CornerDownLeft, SendHorizonal } from "lucide-react";
+import { CornerDownLeft } from "lucide-react";
 
 export function PromptForm({
   input,

@@ -313,7 +313,11 @@ export const FakeResponse: SearchItemsResponse = {
         },
         ItemInfo: {
           ByLineInfo: {
-            Brand: { DisplayValue: "BoriYa", Label: "Brand", Locale: "de_DE" },
+            Brand: {
+              DisplayValue: "BoriYa mit einem extrem langen Firmennamen",
+              Label: "Brand",
+              Locale: "de_DE",
+            },
             Manufacturer: {
               DisplayValue: "BoriYa",
               Label: "Manufacturer",
