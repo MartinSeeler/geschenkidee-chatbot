@@ -24,7 +24,8 @@ const buttonVariants = cva(
         none: "",
       },
       color: {
-        default: "bg-mint-800",
+        default: "bg-main text-white",
+        mint: "bg-mint-800",
         purple: "bg-purple-800 text-white",
         neutral: "bg-white",
       },

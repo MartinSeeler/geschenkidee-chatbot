@@ -79,6 +79,7 @@ export function PromptForm({
           <Button
             type="submit"
             size="icon"
+            color="mint"
             disabled={input === ""}
             className=""
           >

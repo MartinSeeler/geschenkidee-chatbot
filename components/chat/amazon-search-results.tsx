@@ -35,24 +35,18 @@ export function AmazonSearchResults({
               size="none"
               asChild
             >
-              <Link href={item.DetailPageURL} target="_blank">
-                <div className="flex flex-col gap-1 h-full">
-                  <div className="relative">
-                    <div className="w-full flex flex-col border-b-2 border-black overflow-hidden rounded-none rounded-t-lg aspect-square">
-                      <img
-                        src={item.Images?.Primary?.Large?.URL}
-                        alt={item.ItemInfo?.Title?.DisplayValue}
-                        className="object-cover object-center aspect-square w-full max-w-full"
-                      />
-                    </div>
-                    {savings && (
-                      <div className="absolute flex items-center gap-0.5 top-0 right-0 -mt-3 -mr-3 rounded-xl bg-mainAccent py-0.5 px-1.5 border-2 border-black">
-                        <span className="text-xs font-bold text-white">
-                          -{savings}
-                        </span>
-                        <Percent size={10} absoluteStrokeWidth color="white" />
-                      </div>
-                    )}
+              <Link
+                href={item.DetailPageURL}
+                target="_blank"
+                className="relative"
+              >
+                <div className="flex flex-col gap-1 h-full overflow-hidden">
+                  <div className="w-full max-w-full flex flex-col border-b-2 border-black overflow-hidden rounded-none rounded-t-lg aspect-square">
+                    <img
+                      src={item.Images?.Primary?.Large?.URL}
+                      alt={item.ItemInfo?.Title?.DisplayValue}
+                      className="object-cover object-center aspect-square w-full max-w-full"
+                    />
                   </div>
                   <div className="flex-1 flex-grow px-2 pb-1 flex flex-col text-wrap text-sm overflow-hidden line-clamp-2">
                     <p className="font-space font-heading line-clamp-2">
@@ -61,6 +55,14 @@ export function AmazonSearchResults({
                     <p className="font-normal text-xs">{price}€</p>
                   </div>
                 </div>
+                {savings && (
+                  <div className="absolute flex items-center gap-0.5 top-0 right-0 -mt-3 -mr-3 rounded-xl bg-mainAccent py-0.5 px-1.5 border-2 border-black">
+                    <span className="text-xs font-bold text-white">
+                      -{savings}
+                    </span>
+                    <Percent size={10} absoluteStrokeWidth color="white" />
+                  </div>
+                )}
               </Link>
             </Button>
           );

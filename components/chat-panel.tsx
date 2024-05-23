@@ -8,6 +8,8 @@ import type { AI } from "@/lib/chat/actions";
 import { nanoid } from "nanoid";
 import { UserMessage } from "@/components/message";
 import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
+import { PencilLine, PlayCircle } from "lucide-react";
 
 export interface ChatPanelProps {
   input: string;
@@ -27,14 +29,24 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: "Zum Muttertag",
-      subheading: "Für meine wundervolle Frau",
-      message: `Ich möchte meiner Frau zum Muttertag eine Freude machen.`,
+      heading: "Zum Geburtstag",
+      subheading: "Etwas ganz besonderes",
+      message: `Ich suche für einen Geburtstag ein ganz besonderes Geschenk.`,
     },
     {
-      heading: "Zum Geburtstag",
-      subheading: "Für meinen besten Freund",
-      message: `Ich brauche ein Geschenk für meinen besten Freund zum Geburtstag.`,
+      heading: "Zum Hochzeitstag",
+      subheading: "Für meinen Frau",
+      message: `Ich suche ein Geschenk für meine Frau zum Hochzeitstag.`,
+    },
+    {
+      heading: "Für Weihnachten",
+      subheading: "Für jemanden, der schon alles hat",
+      message: `Ich suche ein Weihnachts-Geschenk für jemanden, der schon alles hat.`,
+    },
+    {
+      heading: "Zur Schuleinführung",
+      subheading: "Für einen Jungen",
+      message: `Ich suche ein Geschenk für einen Jungen zur Schuleinführung.`,
     },
   ];
 
@@ -49,12 +61,10 @@ export function ChatPanel({
         <div className="mb-4 grid sm:grid-cols-2 gap-2 sm:gap-4 px-4 sm:px-0">
           {messages.length === 0 &&
             exampleMessages.map((example, index) => (
-              <div
+              <Button
                 key={example.heading}
-                className={cn(
-                  "cursor-pointer bg-zinc-50 text-zinc-950 rounded-2xl p-4 sm:p-6 hover:bg-zinc-100 transition-colors",
-                  index > 1 && "hidden md:block"
-                )}
+                color="mint"
+                size="none"
                 onClick={async () => {
                   setMessages((currentMessages) => [
                     ...currentMessages,
@@ -75,11 +85,23 @@ export function ChatPanel({
                   ]);
                 }}
               >
-                <div className="font-medium">{example.heading}</div>
-                <div className="text-sm text-zinc-800">
-                  {example.subheading}
+                <div className="flex content-between w-full px-4 py-2 items-center sm:items-start">
+                  <div className="flex flex-col gap-1 items-start w-full">
+                    <div className="font-heading font-space text-lg">
+                      {example.heading}
+                    </div>
+                    <div className="text-sm font-base">
+                      {example.subheading}
+                    </div>
+                  </div>
+                  <PencilLine
+                    size={36}
+                    strokeWidth={3}
+                    absoluteStrokeWidth
+                    className="text-main"
+                  />
                 </div>
-              </div>
+              </Button>
             ))}
         </div>
 

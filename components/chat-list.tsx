@@ -22,16 +22,11 @@ export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
         {quickAnswers.map((suggestion) => (
           <Button
             key={suggestion}
-            variant="default"
-            className="flex gap-2 items-center font-sans"
+            color="mint"
+            className="flex gap-2 items-center font-base"
             onClick={() => onSelectAnswer(suggestion)}
           >
-            <Sparkles
-              size={18}
-              strokeWidth={2}
-              absoluteStrokeWidth
-              color="#a88dff"
-            />
+            <Sparkles size={18} strokeWidth={2} className="text-main" />
             <span className="text-nowrap">{suggestion}</span>
           </Button>
         ))}

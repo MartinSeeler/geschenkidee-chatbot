@@ -403,13 +403,11 @@ export const AI = createAI<AIState, UIState>({
     //   role: "assistant",
     //   display: (
     //     <>
-    //       <BotCard>
-    //         <AmazonSearchResults
-    //           results={FakeResponse}
-    //           query="Blumen Muttertag"
-    //         />
-    //       </BotCard>
-    //       {/* <BotMessage content="Wie wäre es mit ein paar schönen Blumen für deine Frau zum Muttertag?" /> */}
+    //       <AmazonSearchResults
+    //         results={FakeResponse}
+    //         query="Blumen Muttertag"
+    //       />
+    //       <BotMessage content="Wie wäre es mit ein paar schönen Blumen für deine Frau zum Muttertag?" />
     //     </>
     //   ),
     // },
