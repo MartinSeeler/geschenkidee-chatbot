@@ -1,6 +1,6 @@
 import { UIState } from "@/lib/chat/actions";
 import { Button } from "./ui/button";
-import { Sparkles } from "lucide-react";
+import { MessageCircleReply, Sparkles } from "lucide-react";
 
 export interface ChatList {
   messages: UIState;
@@ -23,11 +23,18 @@ export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
           <Button
             key={suggestion}
             theme="mint"
-            className="flex gap-2 items-center font-base"
+            className="flex gap-2 items-center"
             onClick={() => onSelectAnswer(suggestion)}
           >
-            <Sparkles size={18} strokeWidth={2} className="text-main" />
-            <span className="text-nowrap">{suggestion}</span>
+            <MessageCircleReply
+              size={24}
+              strokeWidth={2}
+              absoluteStrokeWidth
+              className="text-main"
+            />
+            <span className="text-nowrap font-normal text-base">
+              {suggestion}
+            </span>
           </Button>
         ))}
       </div>

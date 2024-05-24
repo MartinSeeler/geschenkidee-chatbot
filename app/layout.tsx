@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import { Providers } from "@/components/providers";
 
 import "./globals.css";
+import HeaderMenu from "@/components/header-menu";
 
 export const metadata: Metadata = {
-  title: "GeschenkIdee.io | Dein KI-basierter Geschenke-Assistent",
-  description: "Finde sofort die perfekte Geschenkidee für deine Liebsten!",
+  title: "Dein kostenloser KI-basierter Geschenke-Assistent - GeschenkIdee.io",
+  description:
+    "Du suchst nach einem passenden Geschenk? Hier bekommst du ohne Anmeldung und kostenlos Geschenkideen für jeden Anlass. Starte jetzt!",
 };
 
 export default function RootLayout({
@@ -33,7 +35,7 @@ export default function RootLayout({
           sizes="16x16"
           href="/favicon-16x16.png?v=1"
         />
-        <link rel="manifest" href="/site.webmanifest?v=2" />
+        <link rel="manifest" href="/site.webmanifest?v=1" />
         <link
           rel="mask-icon"
           href="/safari-pinned-tab.svg?v=1"
@@ -48,6 +50,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <div className="flex flex-col min-h-screen">
+            <HeaderMenu />
             <main className="flex flex-col flex-1">{children}</main>
           </div>
         </Providers>

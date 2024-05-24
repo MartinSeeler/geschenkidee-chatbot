@@ -4,9 +4,9 @@ import { AI } from "@/lib/chat/actions";
 
 export const dynamic = "force-dynamic";
 
-export const metadata = {
-  //   title: "GeschenkIdee.io",
-};
+// export const metadata = {
+//   //   title: "GeschenkIdee.io",
+// };
 
 export default async function IndexPage() {
   const id = nanoid();

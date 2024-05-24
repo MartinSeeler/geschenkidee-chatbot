@@ -6,7 +6,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center text-black font-heading justify-center whitespace-nowrap rounded-base text-sm font-base font-space ring-offset-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center text-black font-heading justify-center whitespace-nowrap rounded-base text-sm font-bold font-space ring-offset-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -26,7 +26,7 @@ const buttonVariants = cva(
       theme: {
         default: "bg-main text-white",
         mint: "bg-mint-800",
-        purple: "bg-purple-800 text-white",
+        purple: "bg-main text-white",
         neutral: "bg-white",
       },
     },

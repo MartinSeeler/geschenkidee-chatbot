@@ -107,7 +107,7 @@ export default function Features() {
           <Button
             size="lg"
             theme="mint"
-            className="h-12 text-base font-heading md:text-lg lg:h-14 lg:text-xl w-full md:w-auto"
+            className="h-12 md:text-lg lg:h-14 lg:text-xl w-full md:w-auto"
             asChild
           >
             <Link href="/chat">Jetzt chatten und überraschen lassen</Link>

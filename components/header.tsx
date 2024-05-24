@@ -19,7 +19,8 @@ export default function Header() {
 
         <Button
           size="lg"
-          className="h-12 text-base font-heading md:text-lg lg:h-14 lg:text-xl"
+          theme="mint"
+          className="h-12 md:text-lg lg:h-14 lg:text-xl"
           asChild
         >
           <Link href="/chat">Jetzt kostenlos Geschenkideen erhalten</Link>
