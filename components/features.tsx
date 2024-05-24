@@ -104,12 +104,7 @@ export default function Features() {
           })}
         </div>
         <div className="mx-auto w-container max-w-full flex mt-14 lg:mt-20 text-center justify-center px-5">
-          <Button
-            size="lg"
-            theme="mint"
-            className="h-12 md:text-lg lg:h-14 lg:text-xl w-full md:w-auto"
-            asChild
-          >
+          <Button size="lg" theme="mint" asChild>
             <Link href="/chat">Jetzt chatten und überraschen lassen</Link>
           </Button>
         </div>

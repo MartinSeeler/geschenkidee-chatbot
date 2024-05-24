@@ -17,12 +17,7 @@ export default function Header() {
           für jeden Anlass.
         </p>
 
-        <Button
-          size="lg"
-          theme="mint"
-          className="h-12 md:text-lg lg:h-14 lg:text-xl"
-          asChild
-        >
+        <Button size="lg" theme="mint" asChild>
           <Link href="/chat">Jetzt kostenlos Geschenkideen erhalten</Link>
         </Button>
       </div>

@@ -42,7 +42,7 @@ const HeaderMenu = () => {
           ))}
         </div> */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Button size="lg" asChild>
+          <Button asChild>
             <Link
               href="/new"
               onClick={() => setMobileMenuOpen(false)}
@@ -89,7 +89,7 @@ const HeaderMenu = () => {
                 ))}
               </div> */}
               <div className="py-6">
-                <Button size="lg" asChild>
+                <Button asChild>
                   <Link
                     href="/new"
                     onClick={() => setMobileMenuOpen(false)}
