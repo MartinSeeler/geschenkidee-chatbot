@@ -15,11 +15,36 @@ import {
 } from "ai/rsc";
 import { useScrollAnchor } from "@/lib/hooks/use-scroll-anchor";
 import { UserMessage } from "./message";
+import { Button } from "./ui/button";
+import { PencilLine } from "lucide-react";
 
 export interface ChatProps extends React.ComponentProps<"div"> {
   // initialMessages?: Message[]
   id?: string;
 }
+
+const exampleMessages = [
+  {
+    heading: "Zum Geburtstag",
+    subheading: "Etwas ganz besonderes",
+    message: `Ich suche für einen Geburtstag ein ganz besonderes Geschenk.`,
+  },
+  {
+    heading: "Zum Hochzeitstag",
+    subheading: "Für meinen Frau",
+    message: `Ich suche ein Geschenk für meine Frau zum Hochzeitstag.`,
+  },
+  {
+    heading: "Für Weihnachten",
+    subheading: "Für jemanden, der schon alles hat",
+    message: `Ich suche ein Weihnachts-Geschenk für jemanden, der schon alles hat.`,
+  },
+  {
+    heading: "Zur Schuleinführung",
+    subheading: "Für einen Jungen",
+    message: `Ich suche ein Geschenk für einen Jungen zur Schuleinführung.`,
+  },
+];
 
 export function Chat({ id, className }: ChatProps) {
   const [input, setInput] = useState("");
@@ -92,7 +117,55 @@ export function Chat({ id, className }: ChatProps) {
             onSelectAnswer={onSelectAnswer}
           />
         ) : (
-          <EmptyScreen />
+          <div className="mx-auto max-w-2xl px-4 flex flex-col gap-4">
+            <EmptyScreen />
+            <div className="mb-4 grid sm:grid-cols-2 gap-2 sm:gap-4">
+              {messages.length === 0 &&
+                exampleMessages.map((example, index) => (
+                  <Button
+                    key={example.heading}
+                    theme="mint"
+                    size="none"
+                    onClick={async () => {
+                      setMessages((currentMessages) => [
+                        ...currentMessages,
+                        {
+                          id: nanoid(),
+                          role: "user",
+                          display: <UserMessage>{example.message}</UserMessage>,
+                        },
+                      ]);
+
+                      const responseMessage = await submitUserMessage(
+                        example.message
+                      );
+
+                      setMessages((currentMessages) => [
+                        ...currentMessages,
+                        responseMessage,
+                      ]);
+                    }}
+                  >
+                    <div className="flex content-between w-full px-4 py-2 items-center sm:items-start">
+                      <div className="flex flex-col gap-1 items-start w-full">
+                        <div className="font-heading font-space text-lg">
+                          {example.heading}
+                        </div>
+                        <div className="text-sm font-base">
+                          {example.subheading}
+                        </div>
+                      </div>
+                      <PencilLine
+                        size={36}
+                        strokeWidth={3}
+                        absoluteStrokeWidth
+                        className="text-main"
+                      />
+                    </div>
+                  </Button>
+                ))}
+            </div>
+          </div>
         )}
         <div className="h-px w-full" ref={visibilityRef} />
       </div>
