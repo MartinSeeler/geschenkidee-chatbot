@@ -24,11 +24,11 @@ export function PromptForm({
   const { submitUserMessage } = useActions();
   const [_, setMessages] = useUIState<typeof AI>();
 
-  React.useEffect(() => {
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, []);
+  //   React.useEffect(() => {
+  //     if (inputRef.current) {
+  //       inputRef.current.focus();
+  //     }
+  //   }, []);
 
   return (
     <form
