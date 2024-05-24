@@ -32,7 +32,7 @@ export function ChatList({ messages, quickAnswers, onSelectAnswer }: ChatList) {
               absoluteStrokeWidth
               className="text-main"
             />
-            <span className="text-nowrap font-normal text-base">
+            <span className="text-nowrap font-sans font-normal text-base">
               {suggestion}
             </span>
           </Button>
