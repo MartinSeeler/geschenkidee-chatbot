@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   title: "Dein kostenloser KI-basierter Geschenke-Assistent - GeschenkIdee.io",
   description:
     "Du suchst nach einem passenden Geschenk? Hier bekommst du ohne Anmeldung und kostenlos Geschenkideen für jeden Anlass. Starte jetzt!",
+  keywords:
+    "Geschenke, Geschenkideen, KI-Geschenkeberater, personalisierte Geschenke, Geschenk finden, einfach Geschenke suchen",
+  authors: [
+    {
+      name: "Martin Seeler",
+      url: "https://martinseeler.de",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -42,10 +50,14 @@ export default function RootLayout({
           color="#fd9745"
         />
         <link rel="shortcut icon" href="/favicon.ico?v=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
         <meta name="apple-mobile-web-app-title" content="GeschenkIdee.io" />
         <meta name="application-name" content="GeschenkIdee.io" />
         <meta name="msapplication-TileColor" content="#6e61ff" />
-        <meta name="theme-color" content="#f1f6f1"></meta>
+        <meta name="theme-color" content="#f1f6f1" />
       </head>
       <body>
         <Providers>
