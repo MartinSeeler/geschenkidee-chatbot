@@ -22,6 +22,7 @@ import { nanoid } from "@/lib/utils";
 import { FakeResponse, search_items } from "@/lib/amazon/actions";
 import { ReactNode } from "react";
 import { SearchResultItem } from "paapi5-typescript-sdk";
+import { headers } from "next/headers";
 
 const quickAnswersModel = "gpt-3.5-turbo";
 // const chatModel = "ft:gpt-3.5-turbo-0125:martin-seeler::9NG2I8g6"; // :ckpt-step-68
@@ -132,6 +133,27 @@ Schnellantworten: ["20", "30", "40", "50", "60"]
 
 async function submitUserMessage(content: string): Promise<ClientMessage> {
   "use server";
+
+  const { get } = headers();
+  const userAgent = get("User-Agent");
+  const xForwardedFor = get("X-Forwarded-For");
+
+  fetch("https://plausible.io/api/event", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "user-agent": userAgent ?? "",
+      "x-forwarded-for": xForwardedFor ?? "",
+    },
+    body: JSON.stringify({
+      name: "chat-message",
+      url: "https://geschenkidee.io/chat",
+      domain: "geschenkidee.io",
+      props: {
+        content,
+      },
+    }),
+  });
 
   const aiState = getMutableAIState<typeof AI>();
 
