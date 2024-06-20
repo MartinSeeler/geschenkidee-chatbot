@@ -121,13 +121,13 @@ export async function search_items(
     return items;
   }
 
-  for (const item of items.SearchResult.Items) {
-    await client.index({
-      index: "amz-pa-api",
-      id: item.ASIN,
-      body: item,
-    });
-  }
+  // for (const item of items.SearchResult.Items) {
+  //   await client.index({
+  //     index: "amz-pa-api",
+  //     id: item.ASIN,
+  //     body: item,
+  //   });
+  // }
 
   return items;
   // await sleep(1000);
