@@ -23,11 +23,12 @@ import { FakeResponse, search_items } from "@/lib/amazon/actions";
 import { ReactNode } from "react";
 import { SearchResultItem } from "paapi5-typescript-sdk";
 import { headers } from "next/headers";
+import AmazonLinkButton from "@/components/chat/amazon-link-button";
 
-const quickAnswersModel = "gpt-3.5-turbo";
+const quickAnswersModel = "gpt-4o-mini";
 // const chatModel = "ft:gpt-3.5-turbo-0125:martin-seeler::9NG2I8g6"; // :ckpt-step-68
-const chatModel = "gpt-3.5-turbo"; // :ckpt-step-68
-// const chatModel = "gpt-4o"; // :ckpt-step-68
+// const chatModel = "gpt-3.5-turbo"; // :ckpt-step-68
+const chatModel = "gpt-4o-mini"; // :ckpt-step-68
 
 export interface ClientMessage {
   id: string;
@@ -297,26 +298,27 @@ Auch fragst dua fu keinen Fall, wie die Idee gefällt, sondern immer eine konkre
           }
           uiStream.update(<AmazonSearchResultsSkeleton query={query} />);
 
-          const amazonResults = await search_items(query, page, maxPrice);
+          // const amazonResults = await search_items(query, page, maxPrice);
 
           uiStream.update(
             <>
-              <AmazonSearchResults
+              {/* <AmazonSearchResults
                 results={amazonResults} // .slice(0, 8)
                 query={query}
-              />
+              /> */}
+              <AmazonLinkButton query={query} />
               <SpinnerMessage />
             </>
           );
 
-          const itemsContent =
-            "Ergebnisse:\n" +
-            amazonResults.SearchResult?.Items.map(itemToText).join("------\n");
+          // const itemsContent =
+          //   "Ergebnisse:\n" +
+          //   amazonResults.SearchResult?.Items.map(itemToText).join("------\n");
 
-          const assistantMessage: CoreMessage = {
-            role: "assistant",
-            content: itemsContent,
-          };
+          // const assistantMessage: CoreMessage = {
+          //   role: "assistant",
+          //   content: itemsContent,
+          // };
 
           // console.log(
           //   "assistantMessage",
@@ -337,13 +339,14 @@ Auch fragst dua fu keinen Fall, wie die Idee gefällt, sondern immer eine konkre
                 },
               },
               // @ts-ignore
-              assistantMessage,
+              // assistantMessage,
             ],
           });
           const responseStream = createStreamableValue("");
           uiStream.update(
             <>
-              <AmazonSearchResults results={amazonResults} query={query} />
+              {/* <AmazonSearchResults results={amazonResults} query={query} /> */}
+              <AmazonLinkButton query={query} />
               <BotMessage content={responseStream.value} />
             </>
           );
@@ -351,7 +354,27 @@ Auch fragst dua fu keinen Fall, wie die Idee gefällt, sondern immer eine konkre
           (async () => {
             const { textStream } = await streamText({
               model: openai(chatModel),
-              system: system_message,
+              system: `Du bist GeschekIdee.io, ein hilfreicher Assistent zum finden von Geschenken.
+              Dem Nutzer wurde ein Produktvorschlag gemacht. Dazu wurde dem Nutzer gerade ein Link zur Produktübersicht auf Amazon gezeigt.
+              Deine Aufgabe ist es, dem Nutzer dieses Produkt als ideals Geschenk zu verkaufen.
+              Erkläre, wieso dieses Produkt das perfekte Geschenk ist und warum es sich lohnt, es zu kaufen. Halte dich so kurz wie möglich. Sei überzeugend, locker und kreativ.
+        
+
+              Beispiel:
+              {\"query\": \"bestseller 2024\"}
+              Deine Antwort: "Hier ist der Link für die aktuellen Bestseller. Stöber doch mal durch und lass dich inspirieren!\n\nWeißt du zufällig, welches Genre sie am liebsten liest?"
+              
+              Beende deine Antwort mit einer einzigen Frage, um weitere Informationen über die beschenkte Person zu erhalten und ein noch besseres Geschenk zu finden.
+              Die Fragen sollten immer auf die beschenkte Person abzielen und nicht auf das Produkt selbst.
+              Schlechte Fragen sind:
+              - Was hältst du davon?
+              - Ist das was für sie?
+              - Gefällt dir das?
+              Gute Fragen sind:
+              - Weißt du, welches Genre sie am liebsten liest?
+              - Hast du eine Idee, was sie sich schon lange gewünscht hat?
+              - Kennst du ihre Lieblingsfarbe?
+              `,
               temperature: 0.5,
               maxTokens: 500,
               messages: aiState.get().messages as CoreMessage[],
@@ -365,10 +388,11 @@ Auch fragst dua fu keinen Fall, wie die Idee gefällt, sondern immer eine konkre
                 responseStream.done();
                 uiStream.done(
                   <>
-                    <AmazonSearchResults
+                    {/* <AmazonSearchResults
                       results={amazonResults}
                       query={query}
-                    />
+                    /> */}
+                    <AmazonLinkButton query={query} />
                     <BotMessage content={assistentContent} />
                   </>
                 );
@@ -432,6 +456,11 @@ export const AI = createAI<AIState, UIState>({
     //       Ich suche ein Geschenk für meine Frau zum Muttertag.
     //     </UserMessage>
     //   ),
+    // },
+    // {
+    //   id: nanoid(),
+    //   role: "assistant",
+    //   display: <AmazonLinkButton query="Pralinen weiße Schokolade" />,
     // },
     // {
     //   id: nanoid(),

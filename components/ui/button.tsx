@@ -28,6 +28,7 @@ const buttonVariants = cva(
         mint: "bg-mint-800",
         purple: "bg-main text-white",
         neutral: "bg-white",
+        yellow: "bg-mustard-800 text-black",
       },
     },
     defaultVariants: {
